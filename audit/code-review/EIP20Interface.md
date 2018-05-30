@@ -11,7 +11,6 @@ Source file [../../EIP20Interface.sol](../../EIP20Interface.sol).
 // https://github.com/ethereum/EIPs/blob/master/EIPS/eip-20.md
 pragma solidity ^0.4.19;
 
-
 contract EIP20Interface {
     uint256 public totalSupply;
     function balanceOf(address _owner) public view returns (uint256 balance);
@@ -23,4 +22,5 @@ contract EIP20Interface {
     event Transfer(address indexed _from, address indexed _to, uint256 _value);
     event Approval(address indexed _owner, address indexed _spender, uint256 _value);
 }
+
 ```

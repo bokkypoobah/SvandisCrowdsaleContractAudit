@@ -1,12 +1,14 @@
 # Svandis Crowdsale Contract Audit
 
-Commit [88b8ac4](https://github.com/svandisproject/smart-contract/commit/88b8ac47747e81f23d7e653affc3614691894845).
+Commits
+[88b8ac4](https://github.com/svandisproject/smart-contract/commit/88b8ac47747e81f23d7e653affc3614691894845) and
+[62d4b53](https://github.com/svandisproject/smart-contract/commit/62d4b53fd32ec6f1c650bfc09890661652dae663).
 
 ## Recommendations
 
-* [ ] **MEDIUM IMPORTANCE** For whitelisting, use a separate `whitelist` data structure instead of reusing the `allowed` data structure
-* [ ] **MEDIUM IMPORTANCE** Use the SafeMath library to prevent overflow and underflows. Sample code in [FixedSupplyToken.sol](https://github.com/bokkypoobah/Tokens/blob/master/contracts/FixedSupplyToken.sol)
-* [ ] **LOW IMPORTANCE** In *Svandis* `uint256 constant public decimals = 18;` should be of type `uint8`
+* [x] **MEDIUM IMPORTANCE** For whitelisting, use a separate `whitelist` data structure instead of reusing the `allowed` data structure
+* [x] **MEDIUM IMPORTANCE** Use the SafeMath library to prevent overflow and underflows. Sample code in [FixedSupplyToken.sol](https://github.com/bokkypoobah/Tokens/blob/master/contracts/FixedSupplyToken.sol)
+* [x] **LOW IMPORTANCE** In *Svandis* `uint256 constant public decimals = 18;` should be of type `uint8`
 * [ ] **LOW IMPORTANCE** Move *.sol into a *contracts* subdirectory
 
 <br />
@@ -27,6 +29,10 @@ Commit [88b8ac4](https://github.com/svandisproject/smart-contract/commit/88b8ac4
   * [ ] contract Migrations
 * [ ] [code-review/Sale.md](code-review/Sale.md)
   * [ ] contract Sale is Svandis
+  * [ ]     using SafeMath for uint256;
 * [ ] [code-review/Svandis.md](code-review/Svandis.md)
+  * [ ] library SafeMath
   * [ ] contract Svandis is EIP20Interface
+  * [ ]     using SafeMath for uint256;
+
 
