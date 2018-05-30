@@ -7,40 +7,65 @@ Source file [../../Svandis.sol](../../Svandis.sol).
 <hr />
 
 ```javascript
+// BK Ok
 pragma solidity ^0.4.21;
 
+// BK Ok
 import "./EIP20Interface.sol";
 
+// BK Ok
 library SafeMath {
+    // BK Ok - Internal pure function
     function add(uint256 a, uint256 b) internal pure returns (uint256 c) {
+        // BK Ok
         c = a + b;
+        // BK Ok
         require(c >= a);
     }
+    // BK Ok - Internal pure function
     function sub(uint256 a, uint256 b) internal pure returns (uint256 c) {
+        // BK Ok
         require(b <= a);
+        // BK Ok
         c = a - b;
     }
+    // BK Ok - Internal pure function
     function mul(uint256 a, uint256 b) internal pure returns (uint256 c) {
+        // BK Ok
         c = a * b;
+        // BK Ok
         require(a == 0 || c / a == b);
     }
+    // BK Ok - Internal pure function
     function div(uint256 a, uint256 b) internal pure returns (uint256 c) {
+        // BK Ok
         require(b > 0);
+        // BK Ok
         c = a / b;
     }
 }
 
+// BK Ok
 contract Svandis is EIP20Interface {
+    // BK Ok - NOTE - Better to leave a blank line after this line
     using SafeMath for uint256;
+    // BK Ok - NOTE - Better to reorder the keywords as `private constant`
     uint256 constant private MAX_UINT256 = 2**256 - 1;
+    // BK Ok - NOTE - Better to specify as 400000000 * 10**uint256(decimals), and reorder the keywords as `public constant`
     uint256 constant public totalSupply = 400000000000000000000000000;
+    // BK Ok - NOTE - Better to switch line position with the previous line, and reorder the keywords as `public constant`
     uint8 constant public decimals = 18;
 
+    // BK Ok
     mapping (address => uint256) public balances;
+    // BK Ok
     mapping (address => mapping (address => uint256)) public allowed;
     
+    // BK Ok - NOTE - Better to move the next 3 lines prior to `MAX_UINT256` line. Make this `public constant`
     string public name = 'Svandis';
+    // BK Ok - NOTE - Better to make this `public constant` 
     string public symbol = 'SVN';
+    // BK Ok
     string public constant version = "SVN 1.0";
 
     function transfer(address _to, uint256 _value) public returns (bool success) {
