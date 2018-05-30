@@ -6,10 +6,17 @@ Commits
 
 ## Recommendations
 
+* [ ] **LOW IMPORTANCE** In *Sale*, `uint256 public preSaleRate;` is unused
+* [ ] **LOW IMPORTANCE** In *Sale.buyTokens()`, `uint256 quantity = (msg.value * tierToRates[currentTier]).div(1 ether);` should use *SafeMath*
+* [ ] **LOW IMPORTANCE** Move *.sol into a *contracts* subdirectory
+
+<br />
+
+### Completed
+
 * [x] **MEDIUM IMPORTANCE** For whitelisting, use a separate `whitelist` data structure instead of reusing the `allowed` data structure
 * [x] **MEDIUM IMPORTANCE** Use the SafeMath library to prevent overflow and underflows. Sample code in [FixedSupplyToken.sol](https://github.com/bokkypoobah/Tokens/blob/master/contracts/FixedSupplyToken.sol)
 * [x] **LOW IMPORTANCE** In *Svandis* `uint256 constant public decimals = 18;` should be of type `uint8`
-* [ ] **LOW IMPORTANCE** Move *.sol into a *contracts* subdirectory
 
 <br />
 
