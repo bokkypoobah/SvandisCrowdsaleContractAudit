@@ -9,9 +9,8 @@ Source file [../../EIP20Interface.sol](../../EIP20Interface.sol).
 ```javascript
 // Abstract contract for the full ERC 20 Token standard
 // https://github.com/ethereum/EIPs/blob/master/EIPS/eip-20.md
-// BK NOTE - Other files in this repository specify `pragma solidity ^0.4.21;`
 // BK Ok
-pragma solidity ^0.4.19;
+pragma solidity ^0.4.21;
 
 // BK Ok
 contract EIP20Interface {

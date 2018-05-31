@@ -15,12 +15,9 @@ contract Sale is Svandis {
     using SafeMath for uint256;
     address owner;
     address withdrawWallet;
-    uint256 public tier1Rate;
-    uint256 public tier2Rate;
     bool public tiersSet = false;
     uint8 public currentTier = 0;
     bool private enableSale = true;
-    uint256 public preSaleRate;
     mapping(uint8 => uint256) public tierToRates;
     mapping (address => uint256) public companyAllowed;
     mapping (address => uint256) public contributorAllowed;
@@ -130,7 +127,7 @@ contract Sale is Svandis {
     }
 
     function buyTokens() public saleOngoing payable {
-        uint256 quantity = (msg.value * tierToRates[currentTier]).div(1 ether);
+        uint256 quantity = (msg.value.mul(tierToRates[currentTier])).div(1 ether);
         require(quantity <= contributorAllowed[msg.sender]);
 
         balances[msg.sender] = balances[msg.sender].add(quantity);
