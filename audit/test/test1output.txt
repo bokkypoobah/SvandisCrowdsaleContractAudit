@@ -1,0 +1,432 @@
+MODE            = 'test'
+GETHATTACHPOINT = 'ipc:./testchain/geth.ipc'
+PASSWORD        = ''
+SOURCEDIR       = '../../'
+TOKENSOL        = 'Sale.sol'
+TOKENJS         = 'Sale.js'
+DEPLOYMENTDATA  = 'deploymentData.js'
+INCLUDEJS       = './include.js'
+TEST1OUTPUT     = 'test1output.txt'
+TEST1RESULTS    = 'test1results.txt'
+solc, the solidity compiler commandline interface
+Version: 0.4.23+commit.124ca40d.Darwin.appleclang
+Welcome to the Geth JavaScript console!
+
+instance: Geth/v1.8.6-stable-12683fec/darwin-amd64/go1.10
+coinbase: 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e
+at block: 5335 (Sat, 02 Jun 2018 03:10:50 AEST)
+ datadir: /Users/bok/Projects/SvandisCrowdsaleContractAudit/audit/test/testchain
+ modules: admin:1.0 clique:1.0 debug:1.0 eth:1.0 miner:1.0 net:1.0 personal:1.0 rpc:1.0 shh:1.0 txpool:1.0 web3:1.0
+
+> 
+true
+> 
+true
+> 
+> 
+undefined
+> 
+undefined
+> 
+> 
+undefined
+> 
+undefined
+> 
+> 
+> 
+undefined
+> 
+RESULT:  # Account                                             EtherBalanceChange                          Token Name
+RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+RESULT:  0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.000000000000000000           0.000000000000000000 Account #0 - Miner
+RESULT:  1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433        0.000000000000000000           0.000000000000000000 Account #1 - Contract Owner
+RESULT:  2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976        0.000000000000000000           0.000000000000000000 Account #2 - Withdraw Wallet
+RESULT:  3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0        0.000000000000000000           0.000000000000000000 Account #3 - Whitelisted #1
+RESULT:  4 0xa44a08d3f6933c69212114bb66e2df1813651844        0.000000000000000000           0.000000000000000000 Account #4 - Whitelisted #2
+RESULT:  5 0xa55a151eb00fded1634d27d1127b4be4627079ea        0.000000000000000000           0.000000000000000000 Account #5 - Not Whitelisted
+RESULT:  6 0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9        0.000000000000000000           0.000000000000000000 Account #6
+RESULT:  7 0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec        0.000000000000000000           0.000000000000000000 Account #7
+RESULT:  8 0xa88a05d2b88283ce84c8325760b72a64591279a2        0.000000000000000000           0.000000000000000000 Account #8
+RESULT:  9 0xa99a0ae3354c06b1459fd441a32a3f71005d7da0        0.000000000000000000           0.000000000000000000 Account #9 - Company #1
+RESULT: 10 0xaaaa9de1e6c564446ebca0fd102d8bd92093c756        0.000000000000000000           0.000000000000000000 Account #10 - Company #2
+RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+RESULT:                                                                                     0.000000000000000000 Total Token Balances
+RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+RESULT: 
+undefined
+> 
+RESULT: 
+undefined
+> 
+> 
+> 
+undefined
+> 
+undefined
+> 
+undefined
+> 
+RESULT: ---------- Deploy Token Contract ----------
+undefined
+> 
+undefined
+> 
+undefined
+> 
+undefined
+> 
+... 
+...... 
+......... 
+............ 
+............ 
+............ 
+............ 
+............ 
+............ 
+............ 
+............ 
+............ 
+......... 
+...... 
+... 
+undefined
+> 
+... 
+undefined
+> 
+DATA: var tokenAddress="0x38d135023e9142251680f817b7f8bf5c45942cea";
+DATA: var tokenAbi=[{"constant":true,"inputs":[{"name":"","type":"address"}],"name":"companyAllowed","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_tier1Rate","type":"uint256"},{"name":"_tier2Rate","type":"uint256"}],"name":"setTiers","outputs":[{"name":"success","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"name","outputs":[{"name":"","type":"string"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_spender","type":"address"},{"name":"_value","type":"uint256"}],"name":"approve","outputs":[{"name":"success","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[],"name":"disableSale","outputs":[{"name":"success","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"totalSupply","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"_whitelisted","type":"address"}],"name":"checkWhitelisted","outputs":[{"name":"quantity","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_whitelisted","type":"address"},{"name":"_quantity","type":"uint256"}],"name":"addToWhitelist","outputs":[{"name":"success","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"_from","type":"address"},{"name":"_to","type":"address"},{"name":"_value","type":"uint256"}],"name":"transferFrom","outputs":[{"name":"success","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[{"name":"","type":"address"}],"name":"balances","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_amount","type":"uint256"}],"name":"withdraw","outputs":[{"name":"success","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"_whitelisted","type":"address"}],"name":"removeFromCompanyWhitelist","outputs":[{"name":"success","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"decimals","outputs":[{"name":"","type":"uint8"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"tokenAddress","type":"address"},{"name":"tokens","type":"uint256"}],"name":"transferAnyEIP20Token","outputs":[{"name":"success","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"_preSaleRate","type":"uint256"}],"name":"setPreSaleRate","outputs":[{"name":"success","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"version","outputs":[{"name":"","type":"string"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"","type":"address"},{"name":"","type":"address"}],"name":"allowed","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"_whitelisted","type":"address"}],"name":"checkCompanyWhitelisted","outputs":[{"name":"quantity","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"_owner","type":"address"}],"name":"balanceOf","outputs":[{"name":"balance","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"","type":"address"}],"name":"contributorAllowed","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"withdrawWallet","outputs":[{"name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_whitelistedAddresses","type":"address[]"},{"name":"_quantities","type":"uint256[]"}],"name":"addMultipleToWhitelist","outputs":[{"name":"success","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"_whitelisted","type":"address"}],"name":"removeFromWhitelist","outputs":[{"name":"success","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"owner","outputs":[{"name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_withdrawalAddress","type":"address"}],"name":"setWithdrawWallet","outputs":[{"name":"success","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"symbol","outputs":[{"name":"","type":"string"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_to","type":"address"},{"name":"_value","type":"uint256"}],"name":"transfer","outputs":[{"name":"success","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"enableSale","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"tiersSet","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[],"name":"buyTokens","outputs":[],"payable":true,"stateMutability":"payable","type":"function"},{"constant":true,"inputs":[],"name":"getContractEth","outputs":[{"name":"value","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"currentTier","outputs":[{"name":"","type":"uint8"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"_owner","type":"address"},{"name":"_spender","type":"address"}],"name":"allowance","outputs":[{"name":"remaining","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"","type":"uint8"}],"name":"tierToRates","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[],"name":"takeCompanyTokensOwnership","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"_whitelisted","type":"address"},{"name":"_quantity","type":"uint256"}],"name":"addToCompanyWhitelist","outputs":[{"name":"success","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"_tier","type":"uint8"}],"name":"switchTiers","outputs":[{"name":"success","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"inputs":[],"payable":false,"stateMutability":"nonpayable","type":"constructor"},{"payable":true,"stateMutability":"payable","type":"fallback"},{"anonymous":false,"inputs":[{"indexed":true,"name":"_from","type":"address"},{"indexed":true,"name":"_to","type":"address"},{"indexed":false,"name":"_value","type":"uint256"}],"name":"Transfer","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"name":"_owner","type":"address"},{"indexed":true,"name":"_spender","type":"address"},{"indexed":false,"name":"_value","type":"uint256"}],"name":"Approval","type":"event"}];
+DATA: var token=eth.contract(tokenAbi).at(tokenAddress);
+RESULT:  # Account                                             EtherBalanceChange                          Token Name
+RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+RESULT:  0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.018724164000000000           0.000000000000000000 Account #0 - Miner
+RESULT:  1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.018724164000000000           0.000000000000000000 Account #1 - Contract Owner
+RESULT:  2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976        0.000000000000000000           0.000000000000000000 Account #2 - Withdraw Wallet
+RESULT:  3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0        0.000000000000000000           0.000000000000000000 Account #3 - Whitelisted #1
+RESULT:  4 0xa44a08d3f6933c69212114bb66e2df1813651844        0.000000000000000000           0.000000000000000000 Account #4 - Whitelisted #2
+RESULT:  5 0xa55a151eb00fded1634d27d1127b4be4627079ea        0.000000000000000000           0.000000000000000000 Account #5 - Not Whitelisted
+RESULT:  6 0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9        0.000000000000000000           0.000000000000000000 Account #6
+RESULT:  7 0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec        0.000000000000000000           0.000000000000000000 Account #7
+RESULT:  8 0xa88a05d2b88283ce84c8325760b72a64591279a2        0.000000000000000000           0.000000000000000000 Account #8
+RESULT:  9 0xa99a0ae3354c06b1459fd441a32a3f71005d7da0        0.000000000000000000           0.000000000000000000 Account #9 - Company #1
+RESULT: 10 0xaaaa9de1e6c564446ebca0fd102d8bd92093c756        0.000000000000000000           0.000000000000000000 Account #10 - Company #2
+RESULT: 11 0x38d135023e9142251680f817b7f8bf5c45942cea        0.000000000000000000   400000000.000000000000000000 Token 'SVN' 'Svandis'
+RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+RESULT:                                                                             400000000.000000000000000000 Total Token Balances
+RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+RESULT: 
+undefined
+> 
+RESULT: PASS Deploy Token Contract
+1
+> 
+RESULT: tokenAddress=0x38d135023e9142251680f817b7f8bf5c45942cea status=0x1 Success gas=6000000 gasUsed=1560347 costETH=0.018724164 costUSD=10.7701391328 @ ETH/USD=575.2 gasPrice=12 gwei block=5344 txIx=0 txId=0x47b8ac94c5090710b27f94c6e6aefa62e69115553fef17a5f8aca0cddced5044 @ 1527873059 Fri, 01 Jun 2018 17:10:59 UTC
+undefined
+> 
+RESULT: tokenContractAddress=0x38d135023e9142251680f817b7f8bf5c45942cea
+RESULT: token.owner=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
+RESULT: token.withdrawWallet=0x0000000000000000000000000000000000000000
+RESULT: token.tiersSet=false
+RESULT: token.currentTier=0
+RESULT: token.enableSale=true
+RESULT: token.version=SVN 1.0
+RESULT: token.symbol=SVN
+RESULT: token.name=Svandis
+RESULT: token.decimals=18
+RESULT: token.totalSupply=400000000
+RESULT: token.getContractEth=0
+undefined
+> 
+RESULT: 
+undefined
+> 
+> 
+> 
+undefined
+> 
+undefined
+> 
+undefined
+> 
+RESULT: ---------- Set Withdraw Wallet ----------
+undefined
+> 
+undefined
+> 
+... 
+undefined
+> 
+RESULT:  # Account                                             EtherBalanceChange                          Token Name
+RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+RESULT:  0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.019074612000000000           0.000000000000000000 Account #0 - Miner
+RESULT:  1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.019074612000000000           0.000000000000000000 Account #1 - Contract Owner
+RESULT:  2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976        0.000000000000000000           0.000000000000000000 Account #2 - Withdraw Wallet
+RESULT:  3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0        0.000000000000000000           0.000000000000000000 Account #3 - Whitelisted #1
+RESULT:  4 0xa44a08d3f6933c69212114bb66e2df1813651844        0.000000000000000000           0.000000000000000000 Account #4 - Whitelisted #2
+RESULT:  5 0xa55a151eb00fded1634d27d1127b4be4627079ea        0.000000000000000000           0.000000000000000000 Account #5 - Not Whitelisted
+RESULT:  6 0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9        0.000000000000000000           0.000000000000000000 Account #6
+RESULT:  7 0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec        0.000000000000000000           0.000000000000000000 Account #7
+RESULT:  8 0xa88a05d2b88283ce84c8325760b72a64591279a2        0.000000000000000000           0.000000000000000000 Account #8
+RESULT:  9 0xa99a0ae3354c06b1459fd441a32a3f71005d7da0        0.000000000000000000           0.000000000000000000 Account #9 - Company #1
+RESULT: 10 0xaaaa9de1e6c564446ebca0fd102d8bd92093c756        0.000000000000000000           0.000000000000000000 Account #10 - Company #2
+RESULT: 11 0x38d135023e9142251680f817b7f8bf5c45942cea        0.000000000000000000   400000000.000000000000000000 Token 'SVN' 'Svandis'
+RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+RESULT:                                                                             400000000.000000000000000000 Total Token Balances
+RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+RESULT: 
+undefined
+> 
+RESULT: PASS Set Withdraw Wallet
+1
+> 
+RESULT: setWithdrawWallet_1Tx status=0x1 Success gas=400000 gasUsed=29204 costETH=0.000350448 costUSD=0.2015776896 @ ETH/USD=575.2 gasPrice=12 gwei block=5346 txIx=0 txId=0xf88af4ce1c2394745703e02632cce22327a0297171c98857d72e8decab0dac77 @ 1527873061 Fri, 01 Jun 2018 17:11:01 UTC
+undefined
+> 
+RESULT: tokenContractAddress=0x38d135023e9142251680f817b7f8bf5c45942cea
+RESULT: token.owner=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
+RESULT: token.withdrawWallet=0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976
+RESULT: token.tiersSet=false
+RESULT: token.currentTier=0
+RESULT: token.enableSale=true
+RESULT: token.version=SVN 1.0
+RESULT: token.symbol=SVN
+RESULT: token.name=Svandis
+RESULT: token.decimals=18
+RESULT: token.totalSupply=400000000
+RESULT: token.getContractEth=0
+undefined
+> 
+RESULT: 
+undefined
+> 
+> 
+> 
+undefined
+> 
+undefined
+> 
+undefined
+> 
+RESULT: ---------- Whitelist ----------
+undefined
+> 
+undefined
+> 
+undefined
+> 
+undefined
+> 
+undefined
+> 
+... 
+undefined
+> 
+RESULT:  # Account                                             EtherBalanceChange                          Token Name
+RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+RESULT:  0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.021251760000000000           0.000000000000000000 Account #0 - Miner
+RESULT:  1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.021251760000000000           0.000000000000000000 Account #1 - Contract Owner
+RESULT:  2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976        0.000000000000000000           0.000000000000000000 Account #2 - Withdraw Wallet
+RESULT:  3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0        0.000000000000000000           0.000000000000000000 Account #3 - Whitelisted #1
+RESULT:  4 0xa44a08d3f6933c69212114bb66e2df1813651844        0.000000000000000000           0.000000000000000000 Account #4 - Whitelisted #2
+RESULT:  5 0xa55a151eb00fded1634d27d1127b4be4627079ea        0.000000000000000000           0.000000000000000000 Account #5 - Not Whitelisted
+RESULT:  6 0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9        0.000000000000000000           0.000000000000000000 Account #6
+RESULT:  7 0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec        0.000000000000000000           0.000000000000000000 Account #7
+RESULT:  8 0xa88a05d2b88283ce84c8325760b72a64591279a2        0.000000000000000000           0.000000000000000000 Account #8
+RESULT:  9 0xa99a0ae3354c06b1459fd441a32a3f71005d7da0        0.000000000000000000           0.000000000000000000 Account #9 - Company #1
+RESULT: 10 0xaaaa9de1e6c564446ebca0fd102d8bd92093c756        0.000000000000000000           0.000000000000000000 Account #10 - Company #2
+RESULT: 11 0x38d135023e9142251680f817b7f8bf5c45942cea        0.000000000000000000   400000000.000000000000000000 Token 'SVN' 'Svandis'
+RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+RESULT:                                                                             400000000.000000000000000000 Total Token Balances
+RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+RESULT: 
+undefined
+> 
+RESULT: PASS Whitelist - addToWhitelist(account3, 100 ETH)
+1
+> 
+RESULT: PASS Whitelist - addMultipleToWhitelist([account4], [200 ETH])
+1
+> 
+RESULT: PASS Whitelist - addToCompanyWhitelist(account9, 1000 ETH)
+1
+> 
+RESULT: PASS Whitelist - addToCompanyWhitelist(account10, 2000 ETH)
+1
+> 
+RESULT: whitelist_1Tx status=0x1 Success gas=400000 gasUsed=44526 costETH=0.000534312 costUSD=0.3073362624 @ ETH/USD=575.2 gasPrice=12 gwei block=5348 txIx=0 txId=0xbc5d074f2641c238a026e4040714c15250ca7b4532e27fb870eafdaa09032cb8 @ 1527873063 Fri, 01 Jun 2018 17:11:03 UTC
+undefined
+> 
+RESULT: whitelist_2Tx status=0x1 Success gas=400000 gasUsed=46561 costETH=0.000558732 costUSD=0.3213826464 @ ETH/USD=575.2 gasPrice=12 gwei block=5348 txIx=1 txId=0xbb7d2142364ba9fab3ad4910227dc090b10b79c016635ef7a12abc71d5335e8e @ 1527873063 Fri, 01 Jun 2018 17:11:03 UTC
+undefined
+> 
+RESULT: whitelist_3Tx status=0x1 Success gas=400000 gasUsed=45139 costETH=0.000541668 costUSD=0.3115674336 @ ETH/USD=575.2 gasPrice=12 gwei block=5348 txIx=2 txId=0x69c7e7f7f5729422bab1bc8d1fcf051980f01c44501f983392b955ca2dab2f80 @ 1527873063 Fri, 01 Jun 2018 17:11:03 UTC
+undefined
+> 
+RESULT: whitelist_4Tx status=0x1 Success gas=400000 gasUsed=45203 costETH=0.000542436 costUSD=0.3120091872 @ ETH/USD=575.2 gasPrice=12 gwei block=5349 txIx=0 txId=0x8349209a8e06dbe9a68250f827056fe76ca423c457ea5b7a0cfab58f2ea1241f @ 1527873064 Fri, 01 Jun 2018 17:11:04 UTC
+undefined
+> 
+RESULT: tokenContractAddress=0x38d135023e9142251680f817b7f8bf5c45942cea
+RESULT: token.owner=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
+RESULT: token.withdrawWallet=0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976
+RESULT: token.tiersSet=false
+RESULT: token.currentTier=0
+RESULT: token.enableSale=true
+RESULT: token.version=SVN 1.0
+RESULT: token.symbol=SVN
+RESULT: token.name=Svandis
+RESULT: token.decimals=18
+RESULT: token.totalSupply=400000000
+RESULT: token.getContractEth=0
+undefined
+> 
+RESULT: 
+undefined
+> 
+> 
+> 
+undefined
+> 
+undefined
+> 
+undefined
+> 
+RESULT: ---------- Set Tiers ----------
+undefined
+> 
+undefined
+> 
+undefined
+> 
+... 
+undefined
+> 
+RESULT:  # Account                                             EtherBalanceChange                          Token Name
+RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+RESULT:  0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.022585788000000000           0.000000000000000000 Account #0 - Miner
+RESULT:  1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.022585788000000000           0.000000000000000000 Account #1 - Contract Owner
+RESULT:  2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976        0.000000000000000000           0.000000000000000000 Account #2 - Withdraw Wallet
+RESULT:  3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0        0.000000000000000000           0.000000000000000000 Account #3 - Whitelisted #1
+RESULT:  4 0xa44a08d3f6933c69212114bb66e2df1813651844        0.000000000000000000           0.000000000000000000 Account #4 - Whitelisted #2
+RESULT:  5 0xa55a151eb00fded1634d27d1127b4be4627079ea        0.000000000000000000           0.000000000000000000 Account #5 - Not Whitelisted
+RESULT:  6 0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9        0.000000000000000000           0.000000000000000000 Account #6
+RESULT:  7 0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec        0.000000000000000000           0.000000000000000000 Account #7
+RESULT:  8 0xa88a05d2b88283ce84c8325760b72a64591279a2        0.000000000000000000           0.000000000000000000 Account #8
+RESULT:  9 0xa99a0ae3354c06b1459fd441a32a3f71005d7da0        0.000000000000000000           0.000000000000000000 Account #9 - Company #1
+RESULT: 10 0xaaaa9de1e6c564446ebca0fd102d8bd92093c756        0.000000000000000000           0.000000000000000000 Account #10 - Company #2
+RESULT: 11 0x38d135023e9142251680f817b7f8bf5c45942cea        0.000000000000000000   400000000.000000000000000000 Token 'SVN' 'Svandis'
+RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+RESULT:                                                                             400000000.000000000000000000 Total Token Balances
+RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+RESULT: 
+undefined
+> 
+RESULT: PASS Set Tiers - setPreSaleRate(3000)
+1
+> 
+RESULT: PASS Set Tiers - setTiers(2000, 1000)
+1
+> 
+RESULT: setTiers_1Tx status=0x1 Success gas=400000 gasUsed=42690 costETH=0.00051228 costUSD=0.294663456 @ ETH/USD=575.2 gasPrice=12 gwei block=5351 txIx=0 txId=0xb54ff2681ee609ad4e5be5a244ad9486f78cffb85b686eb2ec312ab61c0bb507 @ 1527873066 Fri, 01 Jun 2018 17:11:06 UTC
+undefined
+> 
+RESULT: setTiers_2Tx status=0x1 Success gas=400000 gasUsed=68479 costETH=0.000821748 costUSD=0.4726694496 @ ETH/USD=575.2 gasPrice=12 gwei block=5351 txIx=1 txId=0x81391cf9289e18862cc8376b2ede66b30e481c8093730973342aff1b30377a64 @ 1527873066 Fri, 01 Jun 2018 17:11:06 UTC
+undefined
+> 
+RESULT: tokenContractAddress=0x38d135023e9142251680f817b7f8bf5c45942cea
+RESULT: token.owner=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
+RESULT: token.withdrawWallet=0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976
+RESULT: token.tiersSet=true
+RESULT: token.currentTier=0
+RESULT: token.enableSale=true
+RESULT: token.version=SVN 1.0
+RESULT: token.symbol=SVN
+RESULT: token.name=Svandis
+RESULT: token.decimals=18
+RESULT: token.totalSupply=400000000
+RESULT: token.getContractEth=0
+undefined
+> 
+RESULT: 
+undefined
+> 
+> 
+> 
+undefined
+> 
+undefined
+> 
+undefined
+> 
+RESULT: ---------- Contribute #1 - PreSale ----------
+undefined
+> 
+undefined
+> 
+undefined
+> 
+undefined
+> 
+... 
+undefined
+> 
+RESULT:  # Account                                             EtherBalanceChange                          Token Name
+RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+RESULT:  0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.024419076000000000           0.000000000000000000 Account #0 - Miner
+RESULT:  1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.022585788000000000           0.000000000000000000 Account #1 - Contract Owner
+RESULT:  2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976      200.000000000000000000           0.000000000000000000 Account #2 - Withdraw Wallet
+RESULT:  3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0     -100.000776352000000000      300000.000000000000000000 Account #3 - Whitelisted #1
+RESULT:  4 0xa44a08d3f6933c69212114bb66e2df1813651844     -100.000776352000000000      300000.000000000000000000 Account #4 - Whitelisted #2
+RESULT:  5 0xa55a151eb00fded1634d27d1127b4be4627079ea       -0.000280584000000000           0.000000000000000000 Account #5 - Not Whitelisted
+RESULT:  6 0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9        0.000000000000000000           0.000000000000000000 Account #6
+RESULT:  7 0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec        0.000000000000000000           0.000000000000000000 Account #7
+RESULT:  8 0xa88a05d2b88283ce84c8325760b72a64591279a2        0.000000000000000000           0.000000000000000000 Account #8
+RESULT:  9 0xa99a0ae3354c06b1459fd441a32a3f71005d7da0        0.000000000000000000           0.000000000000000000 Account #9 - Company #1
+RESULT: 10 0xaaaa9de1e6c564446ebca0fd102d8bd92093c756        0.000000000000000000           0.000000000000000000 Account #10 - Company #2
+RESULT: 11 0x38d135023e9142251680f817b7f8bf5c45942cea        0.000000000000000000   399400000.000000000000000000 Token 'SVN' 'Svandis'
+RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+RESULT:                                                                             400000000.000000000000000000 Total Token Balances
+RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+RESULT: 
+undefined
+> 
+RESULT: PASS Contribute #1 - PreSale - ac3 contribute 100 ETH
+1
+> 
+RESULT: PASS Contribute #1 - PreSale - ac4 contribute 100 ETH
+1
+> 
+RESULT: PASS Contribute #1 - PreSale - ac5 contribute 100 ETH - Expecting failure as not whitelisted
+1
+> 
+RESULT: contribute1_1Tx status=0x1 Success gas=400000 gasUsed=64696 costETH=0.000776352 costUSD=0.4465576704 @ ETH/USD=575.2 gasPrice=12 gwei block=5353 txIx=2 txId=0xf9da43257730d05f43ef0c2ea73f5b2a9bc0d68e7928cb01a762a03fe6b13085 @ 1527873068 Fri, 01 Jun 2018 17:11:08 UTC
+undefined
+> 
+RESULT: contribute1_2Tx status=0x1 Success gas=400000 gasUsed=64696 costETH=0.000776352 costUSD=0.4465576704 @ ETH/USD=575.2 gasPrice=12 gwei block=5353 txIx=1 txId=0xd8492533dc72b96c08b5c2c5d943848dfa9aa5000e977b7426948f78c7f58a13 @ 1527873068 Fri, 01 Jun 2018 17:11:08 UTC
+undefined
+> 
+RESULT: contribute1_3Tx status=0x0 Failure gas=400000 gasUsed=23382 costETH=0.000280584 costUSD=0.1613919168 @ ETH/USD=575.2 gasPrice=12 gwei block=5353 txIx=0 txId=0xa681ed1d848cf724c11b404eb7611af7347fcaee477e950a4d4f56538aa704bd @ 1527873068 Fri, 01 Jun 2018 17:11:08 UTC
+undefined
+> 
+RESULT: tokenContractAddress=0x38d135023e9142251680f817b7f8bf5c45942cea
+RESULT: token.owner=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
+RESULT: token.withdrawWallet=0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976
+RESULT: token.tiersSet=true
+RESULT: token.currentTier=0
+RESULT: token.enableSale=true
+RESULT: token.version=SVN 1.0
+RESULT: token.symbol=SVN
+RESULT: token.name=Svandis
+RESULT: token.decimals=18
+RESULT: token.totalSupply=400000000
+RESULT: token.getContractEth=0
+RESULT: Transfer 0 #5353: _from=0x38d135023e9142251680f817b7f8bf5c45942cea _to=0xa44a08d3f6933c69212114bb66e2df1813651844 _value=300000
+RESULT: Transfer 1 #5353: _from=0x38d135023e9142251680f817b7f8bf5c45942cea _to=0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0 _value=300000
+undefined
+> 
+RESULT: 
+undefined
+> 
+> 
+> 

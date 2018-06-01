@@ -8,6 +8,8 @@ Commits
 ## Recommendations
 
 * [ ] **LOW IMPORTANCE** Move *.sol into a *contracts* subdirectory
+* [ ] **LOW IMPORTANCE** *Sale.sol* will not compile with Solc `pragma solidity ^0.4.21` as the `constructor()` keyword is not recognised in this compiler version. Consider changing the minimum compiler version to `^0.4.23` in all the source files
+* [ ] **LOW IMPORTANCE** Consider making `Sale.owner`, `Sale.withdrawWallet` and `Sale.enableSale` public as it helps with testing and debugging
 
 <br />
 
