@@ -11,7 +11,7 @@ This audit has been conducted on Svandis' source code in commits
 [62d4b53](https://github.com/svandisproject/smart-contract/commit/62d4b53fd32ec6f1c650bfc09890661652dae663) and
 [de9ebb3](https://github.com/svandisproject/smart-contract/commit/de9ebb3c6fd3295b1f98abef98f2364c744e4652).
 
-TODO - Check that no potential vulnerabilities have been identified in the crowdsale and token contract.
+No potential vulnerabilities have been identified in the crowdsale/token contract.
 
 <br />
 
@@ -38,6 +38,7 @@ TODO - Check that no potential vulnerabilities have been identified in the crowd
 * [ ] **LOW IMPORTANCE** Move *.sol into a *contracts* subdirectory
 * [ ] **LOW IMPORTANCE** *Sale.sol* will not compile with Solc `pragma solidity ^0.4.21` as the `constructor()` keyword is not recognised in this compiler version. Consider changing the minimum compiler version to `^0.4.23` in all the source files
 * [ ] **LOW IMPORTANCE** Consider making `Sale.owner`, `Sale.withdrawWallet` and `Sale.enableSale` public as it helps with testing and debugging
+* [ ] **LOW IMPORTANCE** The statement `require(_from != address(this));` can be removed from `Svandis.transferFrom(...)`
 
 <br />
 
@@ -77,7 +78,7 @@ TODO - Check that no potential vulnerabilities have been identified in the crowd
 
 ## Potential Vulnerabilities
 
-TODO - Check that no potential vulnerabilities have been identified in the crowdsale and token contract.
+No potential vulnerabilities have been identified in the crowdsale/token contract.
 
 <br />
 
@@ -124,7 +125,8 @@ matches the audited source code, and that the deployment parameters are correctl
 
 ## Risks
 
-TODO
+* There are several configuration parameters in the smart contracts (`withdrawWallet` and `tierToRates`) that need to be set correctly for the sale to operate as expected. These will need to be checked carefully after deployment to ensure that the sale runs smoothly.
+* Ethers contributed to the crowdsale/token contract are transferred directly to the crowdsale wallet, and tokens are transferred from the crowdsale/token contract to the contributing account. This reduces the severity of any attacks on the crowdsale/token contract.
 
 <br />
 
@@ -158,13 +160,13 @@ in [test/test1results.txt](test/test1results.txt) and the detailed output saved 
 
 * [x] [code-review/EIP20Interface.md](code-review/EIP20Interface.md)
   * [x] contract EIP20Interface
-* [ ] [code-review/Svandis.md](code-review/Svandis.md)
+* [x] [code-review/Svandis.md](code-review/Svandis.md)
   * [x] library SafeMath
-  * [ ] contract Svandis is EIP20Interface
-    * [ ] using SafeMath for uint256;
-* [ ] [code-review/Sale.md](code-review/Sale.md)
-  * [ ] contract Sale is Svandis
-    * [ ] using SafeMath for uint256;
+  * [x] contract Svandis is EIP20Interface
+    * [x] using SafeMath for uint256;
+* [x] [code-review/Sale.md](code-review/Sale.md)
+  * [x] contract Sale is Svandis
+    * [x] using SafeMath for uint256;
 
 <br />
 

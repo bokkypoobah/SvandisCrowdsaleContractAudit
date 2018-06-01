@@ -68,38 +68,60 @@ contract Svandis is EIP20Interface {
     mapping (address => uint256) public balances;
     mapping (address => mapping (address => uint256)) public allowed;
 
+    // BK Ok - Any account can send tokens
     function transfer(address _to, uint256 _value) public returns (bool success) {
+        // BK Ok
         require(balances[msg.sender] >= _value);
+        // BK Next 2 Ok
         balances[msg.sender] = balances[msg.sender].sub(_value);
         balances[_to] = balances[_to].add(_value);
+        // BK Ok - Log event
         emit Transfer(msg.sender, _to, _value);
+        // BK Ok
         return true;
     }
 
+    // BK Ok - Any account can send tokens with approval from the `_from` account
     function transferFrom(address _from, address _to, uint256 _value) public returns (bool success) {
+        // BK Ok
         uint256 allowance = allowed[_from][msg.sender];
+        // BK Ok
         require(balances[_from] >= _value && allowance >= _value);
+        // BK Ok, but can remove
         require(_from != address(this));
+        // BK Next 2 Ok
         balances[_to] = balances[_to].add(_value);
         balances[_from] = balances[_from].sub(_value);
+        // BK Ok
         if (allowance < MAX_UINT256) {
+            // BK Ok
             allowed[_from][msg.sender] = allowed[_from][msg.sender].sub(_value);
         }
+        // BK Ok - Log event
         emit Transfer(_from, _to, _value);
+        // BK Ok
         return true;
     }
 
+    // BK Ok - View function
     function balanceOf(address _owner) public view returns (uint256 balance) {
+        // BK Ok
         return balances[_owner];
     }
 
+    // BK Ok - Any account can approve spending
     function approve(address _spender, uint256 _value) public returns (bool success) {
+        // BK Ok
         allowed[msg.sender][_spender] = _value;
+        // BK Ok - Log event
         emit Approval(msg.sender, _spender, _value);
+        // BK Ok
         return true;
     }
 
+    // BK Ok - View function
     function allowance(address _owner, address _spender) public view returns (uint256 remaining) {
+        // BK Ok
         return allowed[_owner][_spender];
     }
 }
