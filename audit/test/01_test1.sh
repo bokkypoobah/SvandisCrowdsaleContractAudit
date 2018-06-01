@@ -111,17 +111,17 @@ console.log("RESULT: ");
 var whitelistMessage = "Whitelist";
 // -----------------------------------------------------------------------------
 console.log("RESULT: ---------- " + whitelistMessage + " ----------");
-var whitelist_1Tx = token.addToWhitelist(account3, new BigNumber("1000000").shift(18), {from: contractOwnerAccount, gas: 400000, gasPrice: defaultGasPrice});
-var whitelist_2Tx = token.addMultipleToWhitelist([account4], [new BigNumber("2000000").shift(18)], {from: contractOwnerAccount, gas: 400000, gasPrice: defaultGasPrice});
-var whitelist_3Tx = token.addToCompanyWhitelist(account9, new BigNumber("10000000").shift(18), {from: contractOwnerAccount, gas: 400000, gasPrice: defaultGasPrice});
-var whitelist_4Tx = token.addToCompanyWhitelist(account10, new BigNumber("20000000").shift(18), {from: contractOwnerAccount, gas: 400000, gasPrice: defaultGasPrice});
+var whitelist_1Tx = token.addToWhitelist(account3, new BigNumber("10000000").shift(18), {from: contractOwnerAccount, gas: 400000, gasPrice: defaultGasPrice});
+var whitelist_2Tx = token.addMultipleToWhitelist([account4], [new BigNumber("10000000").shift(18)], {from: contractOwnerAccount, gas: 400000, gasPrice: defaultGasPrice});
+var whitelist_3Tx = token.addToCompanyWhitelist(account9, new BigNumber("100000000").shift(18), {from: contractOwnerAccount, gas: 400000, gasPrice: defaultGasPrice});
+var whitelist_4Tx = token.addToCompanyWhitelist(account10, new BigNumber("297540000").shift(18), {from: contractOwnerAccount, gas: 400000, gasPrice: defaultGasPrice});
 while (txpool.status.pending > 0) {
 }
 printBalances();
-failIfTxStatusError(whitelist_1Tx, whitelistMessage + " - addToWhitelist(account3, 100 ETH)");
-failIfTxStatusError(whitelist_2Tx, whitelistMessage + " - addMultipleToWhitelist([account4], [200 ETH])");
-failIfTxStatusError(whitelist_3Tx, whitelistMessage + " - addToCompanyWhitelist(account9, 1000 ETH)");
-failIfTxStatusError(whitelist_2Tx, whitelistMessage + " - addToCompanyWhitelist(account10, 2000 ETH)");
+failIfTxStatusError(whitelist_1Tx, whitelistMessage + " - addToWhitelist(account3, 10000000 tokens)");
+failIfTxStatusError(whitelist_2Tx, whitelistMessage + " - addMultipleToWhitelist([account4], [10000000 tokens])");
+failIfTxStatusError(whitelist_3Tx, whitelistMessage + " - addToCompanyWhitelist(account9, 100000000 tokens)");
+failIfTxStatusError(whitelist_2Tx, whitelistMessage + " - addToCompanyWhitelist(account10, 200000000 tokens)");
 printTxData("whitelist_1Tx", whitelist_1Tx);
 printTxData("whitelist_2Tx", whitelist_2Tx);
 printTxData("whitelist_3Tx", whitelist_3Tx);
@@ -134,13 +134,13 @@ console.log("RESULT: ");
 var setTiersMessage = "Set Tiers";
 // -----------------------------------------------------------------------------
 console.log("RESULT: ---------- " + setTiersMessage + " ----------");
-var setTiers_1Tx = token.setPreSaleRate(new BigNumber(3000).shift(18), {from: contractOwnerAccount, gas: 400000, gasPrice: defaultGasPrice});
-var setTiers_2Tx = token.setTiers(new BigNumber(2000).shift(18), new BigNumber(1000).shift(18), {from: contractOwnerAccount, gas: 400000, gasPrice: defaultGasPrice});
+var setTiers_1Tx = token.setPreSaleRate(new BigNumber(300).shift(18), {from: contractOwnerAccount, gas: 400000, gasPrice: defaultGasPrice});
+var setTiers_2Tx = token.setTiers(new BigNumber(200).shift(18), new BigNumber(100).shift(18), {from: contractOwnerAccount, gas: 400000, gasPrice: defaultGasPrice});
 while (txpool.status.pending > 0) {
 }
 printBalances();
-failIfTxStatusError(setTiers_1Tx, setTiersMessage + " - setPreSaleRate(3000)");
-failIfTxStatusError(setTiers_2Tx, setTiersMessage + " - setTiers(2000, 1000)");
+failIfTxStatusError(setTiers_1Tx, setTiersMessage + " - setPreSaleRate(300)");
+failIfTxStatusError(setTiers_2Tx, setTiersMessage + " - setTiers(200, 100)");
 printTxData("setTiers_1Tx", setTiers_1Tx);
 printTxData("setTiers_2Tx", setTiers_2Tx);
 printTokenContractDetails();
@@ -167,58 +167,87 @@ printTokenContractDetails();
 console.log("RESULT: ");
 
 
-exit;
-
-    function setPreSaleRate(uint256 _preSaleRate) public onlyOwner returns (bool success) {
-        tierToRates[0] = _preSaleRate;
-        return true;
-    }
-    function setTiers(uint256 _tier1Rate, uint256 _tier2Rate) public onlyOwner saleOngoing returns (bool success) {
-        tiersSet = true;
-        tierToRates[1] = _tier1Rate;
-        tierToRates[2] = _tier2Rate;
-        return true;
-    }
-
-addAccount(eth.accounts[3], "Account #3 - Whitelisted #1");
-addAccount(eth.accounts[4], "Account #4 - Whitelisted #2");
-addAccount(eth.accounts[5], "Account #5 - Not Whitelisted");
-addAccount(eth.accounts[6], "Account #6");
-addAccount(eth.accounts[7], "Account #7");
-addAccount(eth.accounts[8], "Account #8");
-addAccount(eth.accounts[9], "Account #9 - Company #1");
-addAccount(eth.accounts[10], "Account #10 - Company #2");
-
 // -----------------------------------------------------------------------------
-var mintTokensMessage = "Mint Tokens";
+var switchTiers1Message = "Switch To Tier 1";
 // -----------------------------------------------------------------------------
-console.log("RESULT: ---------- " + mintTokensMessage + " ----------");
-var mintTokens_1Tx = token.mint(account4, new BigNumber("100").shift(18), {from: contractOwnerAccount, gas: 400000});
-var mintTokens_2Tx = token.mint(account5, new BigNumber("200").shift(18), {from: contractOwnerAccount, gas: 400000});
+console.log("RESULT: ---------- " + switchTiers1Message + " ----------");
+var switchTiers1_1Tx = token.switchTiers(1, {from: contractOwnerAccount, gas: 400000, gasPrice: defaultGasPrice});
 while (txpool.status.pending > 0) {
 }
 printBalances();
-failIfTxStatusError(mintTokens_1Tx, mintTokensMessage + " - mint 100 tokens for ac4");
-failIfTxStatusError(mintTokens_2Tx, mintTokensMessage + " - mint 200 tokens for ac5");
-printTxData("mintTokens_1Tx", mintTokens_1Tx);
-printTxData("mintTokens_2Tx", mintTokens_2Tx);
+failIfTxStatusError(switchTiers1_1Tx, switchTiers1Message + " - switchTiers(1)");
+printTxData("switchTiers1_1Tx", switchTiers1_1Tx);
 printTokenContractDetails();
 console.log("RESULT: ");
 
 
 // -----------------------------------------------------------------------------
-var completeSetupMessage = "Complete Setup";
+var contribute2Message = "Contribute #2 - Tier 1";
 // -----------------------------------------------------------------------------
-console.log("RESULT: ---------- " + completeSetupMessage + " ----------");
-var completeSetup_1Tx = token.finishMinting({from: contractOwnerAccount, gas: 400000});
-var completeSetup_2Tx = token.unpause({from: contractOwnerAccount, gas: 400000});
+console.log("RESULT: ---------- " + contribute2Message + " ----------");
+var contribute2_1Tx = token.buyTokens({from: account3, value: web3.toWei(1000, "ether"), gas: 400000, gasPrice: defaultGasPrice});
+var contribute2_2Tx = token.buyTokens({from: account4, value: web3.toWei(1000, "ether"), gas: 400000, gasPrice: defaultGasPrice});
+var contribute2_3Tx = token.buyTokens({from: account5, value: web3.toWei(1000, "ether"), gas: 400000, gasPrice: defaultGasPrice});
 while (txpool.status.pending > 0) {
 }
 printBalances();
-failIfTxStatusError(completeSetup_1Tx, completeSetupMessage + " - finishMinting()");
-failIfTxStatusError(completeSetup_2Tx, completeSetupMessage + " - unpause()");
-printTxData("completeSetup_1Tx", completeSetup_1Tx);
-printTxData("completeSetup_2Tx", completeSetup_2Tx);
+failIfTxStatusError(contribute2_1Tx, contribute2Message + " - ac3 contribute 1000 ETH");
+failIfTxStatusError(contribute2_2Tx, contribute2Message + " - ac4 contribute 1000 ETH");
+passIfTxStatusError(contribute2_3Tx, contribute2Message + " - ac5 contribute 1000 ETH - Expecting failure as not whitelisted");
+printTxData("contribute2_1Tx", contribute2_1Tx);
+printTxData("contribute2_2Tx", contribute2_2Tx);
+printTxData("contribute2_3Tx", contribute2_3Tx);
+printTokenContractDetails();
+console.log("RESULT: ");
+
+
+// -----------------------------------------------------------------------------
+var switchTiers2Message = "Switch To Tier 2";
+// -----------------------------------------------------------------------------
+console.log("RESULT: ---------- " + switchTiers2Message + " ----------");
+var switchTiers2_1Tx = token.switchTiers(2, {from: contractOwnerAccount, gas: 400000, gasPrice: defaultGasPrice});
+while (txpool.status.pending > 0) {
+}
+printBalances();
+failIfTxStatusError(switchTiers2_1Tx, switchTiers2Message + " - switchTiers(2)");
+printTxData("switchTiers2_1Tx", switchTiers2_1Tx);
+printTokenContractDetails();
+console.log("RESULT: ");
+
+
+// -----------------------------------------------------------------------------
+var contribute3Message = "Contribute #3 - Tier 2";
+// -----------------------------------------------------------------------------
+console.log("RESULT: ---------- " + contribute3Message + " ----------");
+var contribute3_1Tx = token.buyTokens({from: account3, value: web3.toWei(10000, "ether"), gas: 400000, gasPrice: defaultGasPrice});
+var contribute3_2Tx = token.buyTokens({from: account4, value: web3.toWei(10000, "ether"), gas: 400000, gasPrice: defaultGasPrice});
+var contribute3_3Tx = token.buyTokens({from: account5, value: web3.toWei(10000, "ether"), gas: 400000, gasPrice: defaultGasPrice});
+while (txpool.status.pending > 0) {
+}
+printBalances();
+failIfTxStatusError(contribute3_1Tx, contribute3Message + " - ac3 contribute 10000 ETH");
+failIfTxStatusError(contribute3_2Tx, contribute3Message + " - ac4 contribute 10000 ETH");
+passIfTxStatusError(contribute3_3Tx, contribute3Message + " - ac5 contribute 10000 ETH - Expecting failure as not whitelisted");
+printTxData("contribute3_1Tx", contribute3_1Tx);
+printTxData("contribute3_2Tx", contribute3_2Tx);
+printTxData("contribute3_3Tx", contribute3_3Tx);
+printTokenContractDetails();
+console.log("RESULT: ");
+
+
+// -----------------------------------------------------------------------------
+var takeCompanyTokensMessage = "Company Tokens";
+// -----------------------------------------------------------------------------
+console.log("RESULT: ---------- " + takeCompanyTokensMessage + " ----------");
+var takeCompanyTokens_1Tx = token.takeCompanyTokensOwnership({from: account9, gas: 400000, gasPrice: defaultGasPrice});
+var takeCompanyTokens_2Tx = token.takeCompanyTokensOwnership({from: account10, gas: 400000, gasPrice: defaultGasPrice});
+while (txpool.status.pending > 0) {
+}
+printBalances();
+failIfTxStatusError(takeCompanyTokens_1Tx, takeCompanyTokensMessage + " - ac9 takeCompanyTokensOwnership()");
+failIfTxStatusError(takeCompanyTokens_2Tx, takeCompanyTokensMessage + " - ac10 takeCompanyTokensOwnership()");
+printTxData("takeCompanyTokens_1Tx", takeCompanyTokens_1Tx);
+printTxData("takeCompanyTokens_2Tx", takeCompanyTokens_2Tx);
 printTokenContractDetails();
 console.log("RESULT: ");
 
@@ -227,17 +256,17 @@ console.log("RESULT: ");
 var moveTokensMessage = "Move Tokens";
 // -----------------------------------------------------------------------------
 console.log("RESULT: ---------- " + moveTokensMessage + " ----------");
-var moveTokens1Tx = token.transfer(account6, new BigNumber("1").shift(18), {from: account4, gas: 100000, gasPrice: defaultGasPrice});
-var moveTokens2Tx = token.approve(account7, new BigNumber("2").shift(18), {from: account5, gas: 100000, gasPrice: defaultGasPrice});
+var moveTokens1Tx = token.transfer(account5, new BigNumber("1").shift(18), {from: account3, gas: 100000, gasPrice: defaultGasPrice});
+var moveTokens2Tx = token.approve(account6, new BigNumber("2").shift(18), {from: account4, gas: 100000, gasPrice: defaultGasPrice});
 while (txpool.status.pending > 0) {
 }
-var moveTokens3Tx = token.transferFrom(account5, account8, new BigNumber("2").shift(18), {from: account7, gas: 100000, gasPrice: defaultGasPrice});
+var moveTokens3Tx = token.transferFrom(account4, account7, new BigNumber("2").shift(18), {from: account6, gas: 100000, gasPrice: defaultGasPrice});
 while (txpool.status.pending > 0) {
 }
 printBalances();
-failIfTxStatusError(moveTokens1Tx, moveTokensMessage + " - transfer 1 tokens ac4 -> ac6");
-failIfTxStatusError(moveTokens2Tx, moveTokensMessage + " - approve 2 tokens ac5 -> ac7");
-failIfTxStatusError(moveTokens3Tx, moveTokensMessage + " - transferFrom 2 tokens ac5 -> ac8 by ac7");
+failIfTxStatusError(moveTokens1Tx, moveTokensMessage + " - transfer 1 tokens ac3 -> ac5");
+failIfTxStatusError(moveTokens2Tx, moveTokensMessage + " - approve 2 tokens ac4 -> ac6");
+failIfTxStatusError(moveTokens3Tx, moveTokensMessage + " - transferFrom 2 tokens ac4 -> ac7 by ac6");
 printTxData("moveTokens1Tx", moveTokens1Tx);
 printTxData("moveTokens2Tx", moveTokens2Tx);
 printTxData("moveTokens3Tx", moveTokens3Tx);
@@ -249,17 +278,17 @@ console.log("RESULT: ");
 var moveZeroTokensMessage = "Move Zero Tokens";
 // -----------------------------------------------------------------------------
 console.log("RESULT: ---------- " + moveZeroTokensMessage + " ----------");
-var moveZeroTokens1Tx = token.transfer(account6, 0, {from: account4, gas: 100000, gasPrice: defaultGasPrice});
-var moveZeroTokens2Tx = token.approve(account7, 0, {from: account5, gas: 100000, gasPrice: defaultGasPrice});
+var moveZeroTokens1Tx = token.transfer(account5, 0, {from: account3, gas: 100000, gasPrice: defaultGasPrice});
+var moveZeroTokens2Tx = token.approve(account6, 0, {from: account4, gas: 100000, gasPrice: defaultGasPrice});
 while (txpool.status.pending > 0) {
 }
-var moveZeroTokens3Tx = token.transferFrom(account5, account8, 0, {from: account7, gas: 100000, gasPrice: defaultGasPrice});
+var moveZeroTokens3Tx = token.transferFrom(account4, account7, 0, {from: account6, gas: 100000, gasPrice: defaultGasPrice});
 while (txpool.status.pending > 0) {
 }
 printBalances();
-failIfTxStatusError(moveZeroTokens1Tx, moveZeroTokensMessage + " - transfer 0 tokens ac4 -> ac6");
-failIfTxStatusError(moveZeroTokens2Tx, moveZeroTokensMessage + " - approve 0 tokens ac5 -> ac7");
-failIfTxStatusError(moveZeroTokens3Tx, moveZeroTokensMessage + " - transferFrom 0 tokens ac5 -> ac8 by ac7");
+failIfTxStatusError(moveZeroTokens1Tx, moveZeroTokensMessage + " - transfer 0 tokens ac3 -> ac5");
+failIfTxStatusError(moveZeroTokens2Tx, moveZeroTokensMessage + " - approve 0 tokens ac4 -> ac6");
+failIfTxStatusError(moveZeroTokens3Tx, moveZeroTokensMessage + " - transferFrom 0 tokens ac4 -> ac7 by ac6");
 printTxData("moveZeroTokens1Tx", moveZeroTokens1Tx);
 printTxData("moveZeroTokens2Tx", moveZeroTokens2Tx);
 printTxData("moveZeroTokens3Tx", moveZeroTokens3Tx);
@@ -271,17 +300,17 @@ console.log("RESULT: ");
 var moveTooManyTokensMessage = "Move Too Many Tokens";
 // -----------------------------------------------------------------------------
 console.log("RESULT: ---------- " + moveTooManyTokensMessage + " ----------");
-var moveTooManyTokens1Tx = token.transfer(account6, new BigNumber("1000").shift(18), {from: account4, gas: 100000, gasPrice: defaultGasPrice});
-var moveTooManyTokens2Tx = token.approve(account7, new BigNumber("2000").shift(18), {from: account5, gas: 100000, gasPrice: defaultGasPrice});
+var moveTooManyTokens1Tx = token.transfer(account5, new BigNumber("10000000").shift(18), {from: account3, gas: 100000, gasPrice: defaultGasPrice});
+var moveTooManyTokens2Tx = token.approve(account6, new BigNumber("10000000").shift(18), {from: account4, gas: 100000, gasPrice: defaultGasPrice});
 while (txpool.status.pending > 0) {
 }
-var moveTooManyTokens3Tx = token.transferFrom(account5, account8, new BigNumber("2000").shift(18), {from: account7, gas: 100000, gasPrice: defaultGasPrice});
+var moveTooManyTokens3Tx = token.transferFrom(account4, account7, new BigNumber("10000000").shift(18), {from: account6, gas: 100000, gasPrice: defaultGasPrice});
 while (txpool.status.pending > 0) {
 }
 printBalances();
-passIfTxStatusError(moveTooManyTokens1Tx, moveTooManyTokensMessage + " - transfer 1,000 tokens ac4 -> ac6 - expecting failure");
-failIfTxStatusError(moveTooManyTokens2Tx, moveTooManyTokensMessage + " - approve 2,000 tokens ac5 -> ac7");
-passIfTxStatusError(moveTooManyTokens3Tx, moveTooManyTokensMessage + " - transferFrom 2,000 tokens ac5 -> ac8 by ac7 - expecting failure");
+passIfTxStatusError(moveTooManyTokens1Tx, moveTooManyTokensMessage + " - transfer 10,000,000 tokens ac4 -> ac6 - expecting failure");
+failIfTxStatusError(moveTooManyTokens2Tx, moveTooManyTokensMessage + " - approve 10,000,000 tokens ac5 -> ac7");
+passIfTxStatusError(moveTooManyTokens3Tx, moveTooManyTokensMessage + " - transferFrom 10,000,000 tokens ac5 -> ac8 by ac7 - expecting failure");
 printTxData("moveTooManyTokens1Tx", moveTooManyTokens1Tx);
 printTxData("moveTooManyTokens2Tx", moveTooManyTokens2Tx);
 printTxData("moveTooManyTokens3Tx", moveTooManyTokens3Tx);

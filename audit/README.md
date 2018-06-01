@@ -1,9 +1,37 @@
 # Svandis Crowdsale Contract Audit
 
-Commits
+## Summary
+
+[Svandis](https://svandis.io/) intends to run a crowdsale in the near future.
+
+Bok Consulting Pty Ltd was commissioned to perform an audit on the Ethereum crowdsale smart contracts for Svandis.
+
+This audit has been conducted on Svandis' source code in commits
 [88b8ac4](https://github.com/svandisproject/smart-contract/commit/88b8ac47747e81f23d7e653affc3614691894845),
 [62d4b53](https://github.com/svandisproject/smart-contract/commit/62d4b53fd32ec6f1c650bfc09890661652dae663) and
 [de9ebb3](https://github.com/svandisproject/smart-contract/commit/de9ebb3c6fd3295b1f98abef98f2364c744e4652).
+
+TODO - Check that no potential vulnerabilities have been identified in the crowdsale and token contract.
+
+<br />
+
+<hr />
+
+## Table Of Contents
+
+* [Summary](#summary)
+* [Recommendations](#recommendations)
+* [Potential Vulnerabilities](#potential-vulnerabilities)
+* [Scope](#scope)
+* [Limitations](#limitations)
+* [Due Diligence](#due-diligence)
+* [Risks](#risks)
+* [Testing](#testing)
+* [Code Review](#code-review)
+
+<br />
+
+<hr />
 
 ## Recommendations
 
@@ -47,7 +75,80 @@ Commits
 
 <hr />
 
+## Potential Vulnerabilities
+
+TODO - Check that no potential vulnerabilities have been identified in the crowdsale and token contract.
+
+<br />
+
+<hr />
+
+## Scope
+
+This audit is into the technical aspects of the crowdsale contracts. The primary aim of this audit is to ensure that funds
+contributed to these contracts are not easily attacked or stolen by third parties. The secondary aim of this audit is to
+ensure the coded algorithms work as expected. This audit does not guarantee that that the code is bugfree, but intends to
+highlight any areas of weaknesses.
+
+<br />
+
+<hr />
+
+## Limitations
+
+This audit makes no statements or warranties about the viability of the Svandis' business proposition, the individuals
+involved in this business or the regulatory regime for the business model.
+
+<br />
+
+<hr />
+
+## Due Diligence
+
+As always, potential participants in any crowdsale are encouraged to perform their due diligence on the business proposition
+before funding any crowdsales.
+
+Potential participants are also encouraged to only send their funds to the official crowdsale Ethereum address, published on
+the crowdsale beneficiary's official communication channel.
+
+Scammers have been publishing phishing address in the forums, twitter and other communication channels, and some go as far as
+duplicating crowdsale websites. Potential participants should NOT just click on any links received through these messages.
+Scammers have also hacked the crowdsale website to replace the crowdsale contract address with their scam address.
+ 
+Potential participants should also confirm that the verified source code on EtherScan.io for the published crowdsale address
+matches the audited source code, and that the deployment parameters are correctly set, including the constant parameters.
+
+<br />
+
+<hr />
+
+## Risks
+
+TODO
+
+<br />
+
+<hr />
+
 ## Testing
+
+Details of the testing environment can be found in [test](test).
+
+The following functions were tested using the script [test/01_test1.sh](test/01_test1.sh) with the summary results saved
+in [test/test1results.txt](test/test1results.txt) and the detailed output saved in [test/test1output.txt](test/test1output.txt):
+
+* [x] Deploy crowdsale/token contracts
+* [x] Set withdraw wallet
+* [x] Whitelist addresses
+* [x] Set rates for tiers
+* [x] Contribute at PreSale rates
+* [x] Switch to Tier 1
+* [x] Contribute at Tier 1
+* [x] Switch to Tier 2
+* [x] Transfer company tokens
+* [x] `transfer(...)`, `approve(...)` and `transferFrom(...)` tokens
+* [x] `transfer(...)`, `approve(...)` and `transferFrom(...)` 0 tokens
+* [x] `transfer(...)`, `approve(...)` and `transferFrom(...)` too many tokens
 
 <br />
 
@@ -70,3 +171,9 @@ Commits
 ### Excluded - Only Used For Testing
 
 * [../Migrations.sol](../Migrations.sol)
+
+<br />
+
+<br />
+
+(c) BokkyPooBah / Bok Consulting Pty Ltd for Svandis - Jun 2 2018. The MIT Licence.
