@@ -8,8 +8,9 @@ Bok Consulting Pty Ltd was commissioned to perform an audit on the Ethereum crow
 
 This audit has been conducted on Svandis' source code in commits
 [88b8ac4](https://github.com/svandisproject/smart-contract/commit/88b8ac47747e81f23d7e653affc3614691894845),
-[62d4b53](https://github.com/svandisproject/smart-contract/commit/62d4b53fd32ec6f1c650bfc09890661652dae663) and
-[de9ebb3](https://github.com/svandisproject/smart-contract/commit/de9ebb3c6fd3295b1f98abef98f2364c744e4652).
+[62d4b53](https://github.com/svandisproject/smart-contract/commit/62d4b53fd32ec6f1c650bfc09890661652dae663),
+[de9ebb3](https://github.com/svandisproject/smart-contract/commit/de9ebb3c6fd3295b1f98abef98f2364c744e4652) and
+[2a33eab](https://github.com/svandisproject/smart-contract/commit/2a33eab2c3a0abd8f51ce5d9668c595bca9ff7e3).
 
 No potential vulnerabilities have been identified in the crowdsale/token contract.
 
@@ -34,15 +35,6 @@ No potential vulnerabilities have been identified in the crowdsale/token contrac
 <hr />
 
 ## Recommendations
-
-* [ ] **LOW IMPORTANCE** Move *.sol into a *contracts* subdirectory
-* [ ] **LOW IMPORTANCE** *Sale.sol* will not compile with Solc `pragma solidity ^0.4.21` as the `constructor()` keyword is not recognised in this compiler version. Consider changing the minimum compiler version to `^0.4.23` in all the source files
-* [ ] **LOW IMPORTANCE** Consider making `Sale.owner`, `Sale.withdrawWallet` and `Sale.enableSale` public as it helps with testing and debugging
-* [ ] **LOW IMPORTANCE** The statement `require(_from != address(this));` can be removed from `Svandis.transferFrom(...)`
-
-<br />
-
-### Completed
 
 * [x] **MEDIUM IMPORTANCE** For whitelisting, use a separate `whitelist` data structure instead of reusing the `allowed` data structure
   * [x] Updated in [62d4b53](https://github.com/svandisproject/smart-contract/commit/62d4b53fd32ec6f1c650bfc09890661652dae663)
@@ -71,6 +63,14 @@ No potential vulnerabilities have been identified in the crowdsale/token contrac
     * [x] Updated in [de9ebb3](https://github.com/svandisproject/smart-contract/commit/de9ebb3c6fd3295b1f98abef98f2364c744e4652)
 * [x] **LOW IMPORTANCE** In *Svandis*, reorder the constant and variable declarations to be `symbol`, `name`, `decimals`, blank line, `version`, blank line, `totalSupply`, blank line, `MAX_UINT256`, blank line, `balances`, `allowed`.
   * [x] Updated in [de9ebb3](https://github.com/svandisproject/smart-contract/commit/de9ebb3c6fd3295b1f98abef98f2364c744e4652)
+* [x] **LOW IMPORTANCE** *Sale.sol* will not compile with Solc `pragma solidity ^0.4.21` as the `constructor()` keyword is not recognised in this compiler version. Consider changing the minimum compiler version to `^0.4.23` in all the source files
+  * [x] Updated in [2a33eab](https://github.com/svandisproject/smart-contract/commit/2a33eab2c3a0abd8f51ce5d9668c595bca9ff7e3)
+* [x] **LOW IMPORTANCE** Consider making `Sale.owner`, `Sale.withdrawWallet` and `Sale.enableSale` public as it helps with testing and debugging
+  * [x] Updated in [2a33eab](https://github.com/svandisproject/smart-contract/commit/2a33eab2c3a0abd8f51ce5d9668c595bca9ff7e3)
+* [x] **LOW IMPORTANCE** The statement `require(_from != address(this));` can be removed from `Svandis.transferFrom(...)`
+  * [x] Removed in [2a33eab](https://github.com/svandisproject/smart-contract/commit/2a33eab2c3a0abd8f51ce5d9668c595bca9ff7e3)
+* [ ] **LOW IMPORTANCE** Move *.sol into a *contracts* subdirectory
+  * Developer decided against this
 
 <br />
 
@@ -126,6 +126,7 @@ matches the audited source code, and that the deployment parameters are correctl
 ## Risks
 
 * There are several configuration parameters in the smart contracts (`withdrawWallet` and `tierToRates`) that need to be set correctly for the sale to operate as expected. These will need to be checked carefully after deployment to ensure that the sale runs smoothly.
+  * After deploying the contracts to mainnet and configuring the parameters, I would recommend whitelisting a test account, sending a small amount (e.g. 0.01 ETH) and checking the tokens transferred and that the ETH ends up in the correct withdrawWallet.
 * Ethers contributed to the crowdsale/token contract are transferred directly to the crowdsale wallet, and tokens are transferred from the crowdsale/token contract to the contributing account. This reduces the severity of any attacks on the crowdsale/token contract.
 
 <br />

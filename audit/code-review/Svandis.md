@@ -8,7 +8,7 @@ Source file [../../Svandis.sol](../../Svandis.sol).
 
 ```javascript
 // BK Ok
-pragma solidity ^0.4.21;
+pragma solidity ^0.4.23;
 
 // BK Ok
 import "./EIP20Interface.sol";
@@ -87,8 +87,6 @@ contract Svandis is EIP20Interface {
         uint256 allowance = allowed[_from][msg.sender];
         // BK Ok
         require(balances[_from] >= _value && allowance >= _value);
-        // BK Ok, but can remove
-        require(_from != address(this));
         // BK Next 2 Ok
         balances[_to] = balances[_to].add(_value);
         balances[_from] = balances[_from].sub(_value);

@@ -1,4 +1,4 @@
-pragma solidity ^0.4.21;
+pragma solidity ^0.4.23;
 
 import "./Svandis.sol";
 
@@ -10,6 +10,7 @@ contract Sale is Svandis {
     bool public tiersSet = false;
     uint8 public currentTier = 0;
     bool public enableSale = true;
+
     mapping(uint8 => uint256) public tierToRates;
     mapping (address => uint256) public companyAllowed;
     mapping (address => uint256) public contributorAllowed;
@@ -65,7 +66,7 @@ contract Sale is Svandis {
     function addMultipleToWhitelist(address[] _whitelistedAddresses, uint256[] _quantities) public onlyOwner returns (bool success) {
         require(_whitelistedAddresses.length == _quantities.length);
         require(_whitelistedAddresses.length <= 100); //Limit set at 100
-        for(uint i = 0; i < _whitelistedAddresses.length; i++){
+        for(uint i = 0; i < _whitelistedAddresses.length; i++) {
             addToWhitelist(_whitelistedAddresses[i], _quantities[i]);
         }
         return true;

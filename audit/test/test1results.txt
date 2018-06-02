@@ -19,8 +19,8 @@
 ---------- Deploy Token Contract ----------
  # Account                                             EtherBalanceChange                          Token Name
 -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
- 0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.018724164000000000           0.000000000000000000 Account #0 - Miner
- 1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.018724164000000000           0.000000000000000000 Account #1 - Contract Owner
+ 0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.018618732000000000           0.000000000000000000 Account #0 - Miner
+ 1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.018618732000000000           0.000000000000000000 Account #1 - Contract Owner
  2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976        0.000000000000000000           0.000000000000000000 Account #2 - Withdraw Wallet
  3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0        0.000000000000000000           0.000000000000000000 Account #3 - Whitelisted #1
  4 0xa44a08d3f6933c69212114bb66e2df1813651844        0.000000000000000000           0.000000000000000000 Account #4 - Whitelisted #2
@@ -30,14 +30,14 @@
  8 0xa88a05d2b88283ce84c8325760b72a64591279a2        0.000000000000000000           0.000000000000000000 Account #8
  9 0xa99a0ae3354c06b1459fd441a32a3f71005d7da0        0.000000000000000000           0.000000000000000000 Account #9 - Company #1
 10 0xaaaa9de1e6c564446ebca0fd102d8bd92093c756        0.000000000000000000           0.000000000000000000 Account #10 - Company #2
-11 0x8662046fb8b0a6c03f49dd0a922a5e60c55f8118        0.000000000000000000   400000000.000000000000000000 Token 'SVN' 'Svandis'
+11 0x658ce9fb3cf49687a5309121b2794f349b79b9a6        0.000000000000000000   400000000.000000000000000000 Token 'SVN' 'Svandis'
 -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
                                                                             400000000.000000000000000000 Total Token Balances
 -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
 
 PASS Deploy Token Contract
-tokenAddress=0x8662046fb8b0a6c03f49dd0a922a5e60c55f8118 status=0x1 Success gas=6000000 gasUsed=1560347 costETH=0.018724164 costUSD=10.7701391328 @ ETH/USD=575.2 gasPrice=12 gwei block=6935 txIx=0 txId=0x7c2230c622f1e86b24666b4be7adad1e30361ee2874e24a321e0c373115c2297 @ 1527874650 Fri, 01 Jun 2018 17:37:30 UTC
-tokenContractAddress=0x8662046fb8b0a6c03f49dd0a922a5e60c55f8118
+tokenAddress=0x658ce9fb3cf49687a5309121b2794f349b79b9a6 status=0x1 Success gas=6000000 gasUsed=1551561 costETH=0.018618732 costUSD=10.7094946464 @ ETH/USD=575.2 gasPrice=12 gwei block=12556 txIx=0 txId=0xeb2d98ed14aacf0d15f96dd48e692ecc3f60306b13b83a3f4bfa1294961e7909 @ 1527906613 Sat, 02 Jun 2018 02:30:13 UTC
+tokenContractAddress=0x658ce9fb3cf49687a5309121b2794f349b79b9a6
 token.owner=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
 token.withdrawWallet=0x0000000000000000000000000000000000000000
 token.tiersSet=false
@@ -53,8 +53,8 @@ token.getContractEth=0
 ---------- Set Withdraw Wallet ----------
  # Account                                             EtherBalanceChange                          Token Name
 -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
- 0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.019074612000000000           0.000000000000000000 Account #0 - Miner
- 1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.019074612000000000           0.000000000000000000 Account #1 - Contract Owner
+ 0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.018969180000000000           0.000000000000000000 Account #0 - Miner
+ 1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.018969180000000000           0.000000000000000000 Account #1 - Contract Owner
  2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976        0.000000000000000000           0.000000000000000000 Account #2 - Withdraw Wallet
  3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0        0.000000000000000000           0.000000000000000000 Account #3 - Whitelisted #1
  4 0xa44a08d3f6933c69212114bb66e2df1813651844        0.000000000000000000           0.000000000000000000 Account #4 - Whitelisted #2
@@ -64,14 +64,14 @@ token.getContractEth=0
  8 0xa88a05d2b88283ce84c8325760b72a64591279a2        0.000000000000000000           0.000000000000000000 Account #8
  9 0xa99a0ae3354c06b1459fd441a32a3f71005d7da0        0.000000000000000000           0.000000000000000000 Account #9 - Company #1
 10 0xaaaa9de1e6c564446ebca0fd102d8bd92093c756        0.000000000000000000           0.000000000000000000 Account #10 - Company #2
-11 0x8662046fb8b0a6c03f49dd0a922a5e60c55f8118        0.000000000000000000   400000000.000000000000000000 Token 'SVN' 'Svandis'
+11 0x658ce9fb3cf49687a5309121b2794f349b79b9a6        0.000000000000000000   400000000.000000000000000000 Token 'SVN' 'Svandis'
 -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
                                                                             400000000.000000000000000000 Total Token Balances
 -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
 
 PASS Set Withdraw Wallet
-setWithdrawWallet_1Tx status=0x1 Success gas=400000 gasUsed=29204 costETH=0.000350448 costUSD=0.2015776896 @ ETH/USD=575.2 gasPrice=12 gwei block=6937 txIx=0 txId=0x1c50b78d3c46540df4430f23184625205ddfb7470ef36b4eded1aa63633ac499 @ 1527874652 Fri, 01 Jun 2018 17:37:32 UTC
-tokenContractAddress=0x8662046fb8b0a6c03f49dd0a922a5e60c55f8118
+setWithdrawWallet_1Tx status=0x1 Success gas=400000 gasUsed=29204 costETH=0.000350448 costUSD=0.2015776896 @ ETH/USD=575.2 gasPrice=12 gwei block=12559 txIx=0 txId=0x326e7803a7263df5309475f6f09e492add7f4cd44c048f7f253e98af0598e56b @ 1527906616 Sat, 02 Jun 2018 02:30:16 UTC
+tokenContractAddress=0x658ce9fb3cf49687a5309121b2794f349b79b9a6
 token.owner=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
 token.withdrawWallet=0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976
 token.tiersSet=false
@@ -87,8 +87,8 @@ token.getContractEth=0
 ---------- Whitelist ----------
  # Account                                             EtherBalanceChange                          Token Name
 -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
- 0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.021253296000000000           0.000000000000000000 Account #0 - Miner
- 1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.021253296000000000           0.000000000000000000 Account #1 - Contract Owner
+ 0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.021147864000000000           0.000000000000000000 Account #0 - Miner
+ 1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.021147864000000000           0.000000000000000000 Account #1 - Contract Owner
  2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976        0.000000000000000000           0.000000000000000000 Account #2 - Withdraw Wallet
  3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0        0.000000000000000000           0.000000000000000000 Account #3 - Whitelisted #1
  4 0xa44a08d3f6933c69212114bb66e2df1813651844        0.000000000000000000           0.000000000000000000 Account #4 - Whitelisted #2
@@ -98,7 +98,7 @@ token.getContractEth=0
  8 0xa88a05d2b88283ce84c8325760b72a64591279a2        0.000000000000000000           0.000000000000000000 Account #8
  9 0xa99a0ae3354c06b1459fd441a32a3f71005d7da0        0.000000000000000000           0.000000000000000000 Account #9 - Company #1
 10 0xaaaa9de1e6c564446ebca0fd102d8bd92093c756        0.000000000000000000           0.000000000000000000 Account #10 - Company #2
-11 0x8662046fb8b0a6c03f49dd0a922a5e60c55f8118        0.000000000000000000   400000000.000000000000000000 Token 'SVN' 'Svandis'
+11 0x658ce9fb3cf49687a5309121b2794f349b79b9a6        0.000000000000000000   400000000.000000000000000000 Token 'SVN' 'Svandis'
 -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
                                                                             400000000.000000000000000000 Total Token Balances
 -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
@@ -107,11 +107,11 @@ PASS Whitelist - addToWhitelist(account3, 10000000 tokens)
 PASS Whitelist - addMultipleToWhitelist([account4], [10000000 tokens])
 PASS Whitelist - addToCompanyWhitelist(account9, 100000000 tokens)
 PASS Whitelist - addToCompanyWhitelist(account10, 200000000 tokens)
-whitelist_1Tx status=0x1 Success gas=400000 gasUsed=44590 costETH=0.00053508 costUSD=0.307778016 @ ETH/USD=575.2 gasPrice=12 gwei block=6939 txIx=0 txId=0x8b818e014379f4da6d4af02b116e3ddf0afde57882977bb056fd903bf4037565 @ 1527874654 Fri, 01 Jun 2018 17:37:34 UTC
-whitelist_2Tx status=0x1 Success gas=400000 gasUsed=46561 costETH=0.000558732 costUSD=0.3213826464 @ ETH/USD=575.2 gasPrice=12 gwei block=6939 txIx=1 txId=0x0f07945761a1c9dc8655621c3d63a12b00d46aa820c1a3cf46f692f7fcf2460c @ 1527874654 Fri, 01 Jun 2018 17:37:34 UTC
-whitelist_3Tx status=0x1 Success gas=400000 gasUsed=45139 costETH=0.000541668 costUSD=0.3115674336 @ ETH/USD=575.2 gasPrice=12 gwei block=6939 txIx=2 txId=0x07363eed3a88bc0715e8d6dcb5d5cde4841f1038c8322d7f1a2ccda5948ff854 @ 1527874654 Fri, 01 Jun 2018 17:37:34 UTC
-whitelist_4Tx status=0x1 Success gas=400000 gasUsed=45267 costETH=0.000543204 costUSD=0.3124509408 @ ETH/USD=575.2 gasPrice=12 gwei block=6940 txIx=0 txId=0x710c913647d57fab7ec3df264ee0f62eedae8825098b2de64a927037c9d9f4b0 @ 1527874655 Fri, 01 Jun 2018 17:37:35 UTC
-tokenContractAddress=0x8662046fb8b0a6c03f49dd0a922a5e60c55f8118
+whitelist_1Tx status=0x1 Success gas=400000 gasUsed=44590 costETH=0.00053508 costUSD=0.307778016 @ ETH/USD=575.2 gasPrice=12 gwei block=12561 txIx=0 txId=0x8a12831ec0f2c5ec719debf5154df2474ceec1e18d98d73a9c518d546e976f22 @ 1527906618 Sat, 02 Jun 2018 02:30:18 UTC
+whitelist_2Tx status=0x1 Success gas=400000 gasUsed=46561 costETH=0.000558732 costUSD=0.3213826464 @ ETH/USD=575.2 gasPrice=12 gwei block=12561 txIx=1 txId=0xa2b62cd9aa7ee76c21612e123a2bf34c6f44cc58791e8515100d61eaf21afee6 @ 1527906618 Sat, 02 Jun 2018 02:30:18 UTC
+whitelist_3Tx status=0x1 Success gas=400000 gasUsed=45139 costETH=0.000541668 costUSD=0.3115674336 @ ETH/USD=575.2 gasPrice=12 gwei block=12561 txIx=2 txId=0xfd0073f702e2ed1bf9e625bc4f34ac433d16d5a0dd2a0a73b2f2ef38a9e716c5 @ 1527906618 Sat, 02 Jun 2018 02:30:18 UTC
+whitelist_4Tx status=0x1 Success gas=400000 gasUsed=45267 costETH=0.000543204 costUSD=0.3124509408 @ ETH/USD=575.2 gasPrice=12 gwei block=12562 txIx=0 txId=0x22108c2e89af55b180f99bec889271a12dc516274e7477cfa10143f7039956c5 @ 1527906619 Sat, 02 Jun 2018 02:30:19 UTC
+tokenContractAddress=0x658ce9fb3cf49687a5309121b2794f349b79b9a6
 token.owner=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
 token.withdrawWallet=0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976
 token.tiersSet=false
@@ -127,8 +127,8 @@ token.getContractEth=0
 ---------- Set Tiers ----------
  # Account                                             EtherBalanceChange                          Token Name
 -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
- 0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.022587324000000000           0.000000000000000000 Account #0 - Miner
- 1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.022587324000000000           0.000000000000000000 Account #1 - Contract Owner
+ 0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.022481892000000000           0.000000000000000000 Account #0 - Miner
+ 1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.022481892000000000           0.000000000000000000 Account #1 - Contract Owner
  2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976        0.000000000000000000           0.000000000000000000 Account #2 - Withdraw Wallet
  3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0        0.000000000000000000           0.000000000000000000 Account #3 - Whitelisted #1
  4 0xa44a08d3f6933c69212114bb66e2df1813651844        0.000000000000000000           0.000000000000000000 Account #4 - Whitelisted #2
@@ -138,16 +138,16 @@ token.getContractEth=0
  8 0xa88a05d2b88283ce84c8325760b72a64591279a2        0.000000000000000000           0.000000000000000000 Account #8
  9 0xa99a0ae3354c06b1459fd441a32a3f71005d7da0        0.000000000000000000           0.000000000000000000 Account #9 - Company #1
 10 0xaaaa9de1e6c564446ebca0fd102d8bd92093c756        0.000000000000000000           0.000000000000000000 Account #10 - Company #2
-11 0x8662046fb8b0a6c03f49dd0a922a5e60c55f8118        0.000000000000000000   400000000.000000000000000000 Token 'SVN' 'Svandis'
+11 0x658ce9fb3cf49687a5309121b2794f349b79b9a6        0.000000000000000000   400000000.000000000000000000 Token 'SVN' 'Svandis'
 -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
                                                                             400000000.000000000000000000 Total Token Balances
 -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
 
 PASS Set Tiers - setPreSaleRate(300)
 PASS Set Tiers - setTiers(200, 100)
-setTiers_1Tx status=0x1 Success gas=400000 gasUsed=42690 costETH=0.00051228 costUSD=0.294663456 @ ETH/USD=575.2 gasPrice=12 gwei block=6942 txIx=0 txId=0x1725c96ddbfb384536699de6475a6f31978a9ff5ec9622b176c82a5dd0c269b5 @ 1527874657 Fri, 01 Jun 2018 17:37:37 UTC
-setTiers_2Tx status=0x1 Success gas=400000 gasUsed=68479 costETH=0.000821748 costUSD=0.4726694496 @ ETH/USD=575.2 gasPrice=12 gwei block=6942 txIx=1 txId=0x334df87fd956175388ecf293a4824bb2d82f7fd0e1b8ee661c576fdaaf2e158a @ 1527874657 Fri, 01 Jun 2018 17:37:37 UTC
-tokenContractAddress=0x8662046fb8b0a6c03f49dd0a922a5e60c55f8118
+setTiers_1Tx status=0x1 Success gas=400000 gasUsed=42690 costETH=0.00051228 costUSD=0.294663456 @ ETH/USD=575.2 gasPrice=12 gwei block=12564 txIx=0 txId=0x5c3fad4e65bd9b9ea1316828954902188b090e3b13eca3fd7d12c0d52d859c58 @ 1527906621 Sat, 02 Jun 2018 02:30:21 UTC
+setTiers_2Tx status=0x1 Success gas=400000 gasUsed=68479 costETH=0.000821748 costUSD=0.4726694496 @ ETH/USD=575.2 gasPrice=12 gwei block=12564 txIx=1 txId=0x47ef67b50600deacea2b9f1c1dbfbb65c5398d51daca1e5800c6cf3fe26e0081 @ 1527906621 Sat, 02 Jun 2018 02:30:21 UTC
+tokenContractAddress=0x658ce9fb3cf49687a5309121b2794f349b79b9a6
 token.owner=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
 token.withdrawWallet=0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976
 token.tiersSet=true
@@ -163,8 +163,8 @@ token.getContractEth=0
 ---------- Contribute #1 - PreSale ----------
  # Account                                             EtherBalanceChange                          Token Name
 -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
- 0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.024420612000000000           0.000000000000000000 Account #0 - Miner
- 1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.022587324000000000           0.000000000000000000 Account #1 - Contract Owner
+ 0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.024315180000000000           0.000000000000000000 Account #0 - Miner
+ 1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.022481892000000000           0.000000000000000000 Account #1 - Contract Owner
  2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976      200.000000000000000000           0.000000000000000000 Account #2 - Withdraw Wallet
  3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0     -100.000776352000000000       30000.000000000000000000 Account #3 - Whitelisted #1
  4 0xa44a08d3f6933c69212114bb66e2df1813651844     -100.000776352000000000       30000.000000000000000000 Account #4 - Whitelisted #2
@@ -174,7 +174,7 @@ token.getContractEth=0
  8 0xa88a05d2b88283ce84c8325760b72a64591279a2        0.000000000000000000           0.000000000000000000 Account #8
  9 0xa99a0ae3354c06b1459fd441a32a3f71005d7da0        0.000000000000000000           0.000000000000000000 Account #9 - Company #1
 10 0xaaaa9de1e6c564446ebca0fd102d8bd92093c756        0.000000000000000000           0.000000000000000000 Account #10 - Company #2
-11 0x8662046fb8b0a6c03f49dd0a922a5e60c55f8118        0.000000000000000000   399940000.000000000000000000 Token 'SVN' 'Svandis'
+11 0x658ce9fb3cf49687a5309121b2794f349b79b9a6        0.000000000000000000   399940000.000000000000000000 Token 'SVN' 'Svandis'
 -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
                                                                             400000000.000000000000000000 Total Token Balances
 -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
@@ -182,10 +182,10 @@ token.getContractEth=0
 PASS Contribute #1 - PreSale - ac3 contribute 100 ETH
 PASS Contribute #1 - PreSale - ac4 contribute 100 ETH
 PASS Contribute #1 - PreSale - ac5 contribute 100 ETH - Expecting failure as not whitelisted
-contribute1_1Tx status=0x1 Success gas=400000 gasUsed=64696 costETH=0.000776352 costUSD=0.4465576704 @ ETH/USD=575.2 gasPrice=12 gwei block=6944 txIx=0 txId=0x2d8dfc89c5fdd348a9ef9b3f8650f81b9b03bcb1da667612333f66feda091eb6 @ 1527874659 Fri, 01 Jun 2018 17:37:39 UTC
-contribute1_2Tx status=0x1 Success gas=400000 gasUsed=64696 costETH=0.000776352 costUSD=0.4465576704 @ ETH/USD=575.2 gasPrice=12 gwei block=6945 txIx=0 txId=0x4ca6748ce2d438befd3ad7e838f96e9ca3fad15a3da23dd67b8b4810868e03de @ 1527874660 Fri, 01 Jun 2018 17:37:40 UTC
-contribute1_3Tx status=0x0 Failure gas=400000 gasUsed=23382 costETH=0.000280584 costUSD=0.1613919168 @ ETH/USD=575.2 gasPrice=12 gwei block=6945 txIx=1 txId=0xadb840e733f37118549122fb963f12158217de0903e8de589b55611799760d6d @ 1527874660 Fri, 01 Jun 2018 17:37:40 UTC
-tokenContractAddress=0x8662046fb8b0a6c03f49dd0a922a5e60c55f8118
+contribute1_1Tx status=0x1 Success gas=400000 gasUsed=64696 costETH=0.000776352 costUSD=0.4465576704 @ ETH/USD=575.2 gasPrice=12 gwei block=12566 txIx=1 txId=0xa086c769201d948eee8cec549311024fd86f163790dd5d211927d9c35be8782e @ 1527906623 Sat, 02 Jun 2018 02:30:23 UTC
+contribute1_2Tx status=0x1 Success gas=400000 gasUsed=64696 costETH=0.000776352 costUSD=0.4465576704 @ ETH/USD=575.2 gasPrice=12 gwei block=12566 txIx=0 txId=0xfa0d1d7d587a1a58a184380ba246fc9b049f6ce6d9397ccc7df919aea3c5cf52 @ 1527906623 Sat, 02 Jun 2018 02:30:23 UTC
+contribute1_3Tx status=0x0 Failure gas=400000 gasUsed=23382 costETH=0.000280584 costUSD=0.1613919168 @ ETH/USD=575.2 gasPrice=12 gwei block=12566 txIx=2 txId=0xdc9cabaf9ce6d9c8433b4869bea0d18c224445f8a61d7eaddfeeb91bf4a35958 @ 1527906623 Sat, 02 Jun 2018 02:30:23 UTC
+tokenContractAddress=0x658ce9fb3cf49687a5309121b2794f349b79b9a6
 token.owner=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
 token.withdrawWallet=0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976
 token.tiersSet=true
@@ -197,14 +197,14 @@ token.name=Svandis
 token.decimals=18
 token.totalSupply=400000000
 token.getContractEth=0
-Transfer 0 #6944: _from=0x8662046fb8b0a6c03f49dd0a922a5e60c55f8118 _to=0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0 _value=30000
-Transfer 1 #6945: _from=0x8662046fb8b0a6c03f49dd0a922a5e60c55f8118 _to=0xa44a08d3f6933c69212114bb66e2df1813651844 _value=30000
+Transfer 0 #12566: _from=0x658ce9fb3cf49687a5309121b2794f349b79b9a6 _to=0xa44a08d3f6933c69212114bb66e2df1813651844 _value=30000
+Transfer 1 #12566: _from=0x658ce9fb3cf49687a5309121b2794f349b79b9a6 _to=0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0 _value=30000
 
 ---------- Switch To Tier 1 ----------
  # Account                                             EtherBalanceChange                          Token Name
 -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
- 0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.024760548000000000           0.000000000000000000 Account #0 - Miner
- 1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.022927260000000000           0.000000000000000000 Account #1 - Contract Owner
+ 0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.024655116000000000           0.000000000000000000 Account #0 - Miner
+ 1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.022821828000000000           0.000000000000000000 Account #1 - Contract Owner
  2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976      200.000000000000000000           0.000000000000000000 Account #2 - Withdraw Wallet
  3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0     -100.000776352000000000       30000.000000000000000000 Account #3 - Whitelisted #1
  4 0xa44a08d3f6933c69212114bb66e2df1813651844     -100.000776352000000000       30000.000000000000000000 Account #4 - Whitelisted #2
@@ -214,14 +214,14 @@ Transfer 1 #6945: _from=0x8662046fb8b0a6c03f49dd0a922a5e60c55f8118 _to=0xa44a08d
  8 0xa88a05d2b88283ce84c8325760b72a64591279a2        0.000000000000000000           0.000000000000000000 Account #8
  9 0xa99a0ae3354c06b1459fd441a32a3f71005d7da0        0.000000000000000000           0.000000000000000000 Account #9 - Company #1
 10 0xaaaa9de1e6c564446ebca0fd102d8bd92093c756        0.000000000000000000           0.000000000000000000 Account #10 - Company #2
-11 0x8662046fb8b0a6c03f49dd0a922a5e60c55f8118        0.000000000000000000   399940000.000000000000000000 Token 'SVN' 'Svandis'
+11 0x658ce9fb3cf49687a5309121b2794f349b79b9a6        0.000000000000000000   399940000.000000000000000000 Token 'SVN' 'Svandis'
 -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
                                                                             400000000.000000000000000000 Total Token Balances
 -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
 
 PASS Switch To Tier 1 - switchTiers(1)
-switchTiers1_1Tx status=0x1 Success gas=400000 gasUsed=28328 costETH=0.000339936 costUSD=0.1955311872 @ ETH/USD=575.2 gasPrice=12 gwei block=6947 txIx=0 txId=0xbdb4f878dc2fefc4109615076a716a5b52e6ad5d7796185bc08d7b7eb5a6cd9b @ 1527874662 Fri, 01 Jun 2018 17:37:42 UTC
-tokenContractAddress=0x8662046fb8b0a6c03f49dd0a922a5e60c55f8118
+switchTiers1_1Tx status=0x1 Success gas=400000 gasUsed=28328 costETH=0.000339936 costUSD=0.1955311872 @ ETH/USD=575.2 gasPrice=12 gwei block=12569 txIx=0 txId=0x224afd4a30fc97da616612ece0c9d78b590df3bf644bbfb2989fd85b38bba9a6 @ 1527906626 Sat, 02 Jun 2018 02:30:26 UTC
+tokenContractAddress=0x658ce9fb3cf49687a5309121b2794f349b79b9a6
 token.owner=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
 token.withdrawWallet=0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976
 token.tiersSet=true
@@ -237,8 +237,8 @@ token.getContractEth=0
 ---------- Contribute #2 - Tier 1 ----------
  # Account                                             EtherBalanceChange                          Token Name
 -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
- 0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.026233836000000000           0.000000000000000000 Account #0 - Miner
- 1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.022927260000000000           0.000000000000000000 Account #1 - Contract Owner
+ 0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.026128404000000000           0.000000000000000000 Account #0 - Miner
+ 1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.022821828000000000           0.000000000000000000 Account #1 - Contract Owner
  2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976     2200.000000000000000000           0.000000000000000000 Account #2 - Withdraw Wallet
  3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0    -1100.001372704000000000      230000.000000000000000000 Account #3 - Whitelisted #1
  4 0xa44a08d3f6933c69212114bb66e2df1813651844    -1100.001372704000000000      230000.000000000000000000 Account #4 - Whitelisted #2
@@ -248,7 +248,7 @@ token.getContractEth=0
  8 0xa88a05d2b88283ce84c8325760b72a64591279a2        0.000000000000000000           0.000000000000000000 Account #8
  9 0xa99a0ae3354c06b1459fd441a32a3f71005d7da0        0.000000000000000000           0.000000000000000000 Account #9 - Company #1
 10 0xaaaa9de1e6c564446ebca0fd102d8bd92093c756        0.000000000000000000           0.000000000000000000 Account #10 - Company #2
-11 0x8662046fb8b0a6c03f49dd0a922a5e60c55f8118        0.000000000000000000   399540000.000000000000000000 Token 'SVN' 'Svandis'
+11 0x658ce9fb3cf49687a5309121b2794f349b79b9a6        0.000000000000000000   399540000.000000000000000000 Token 'SVN' 'Svandis'
 -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
                                                                             400000000.000000000000000000 Total Token Balances
 -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
@@ -256,10 +256,10 @@ token.getContractEth=0
 PASS Contribute #2 - Tier 1 - ac3 contribute 1000 ETH
 PASS Contribute #2 - Tier 1 - ac4 contribute 1000 ETH
 PASS Contribute #2 - Tier 1 - ac5 contribute 1000 ETH - Expecting failure as not whitelisted
-contribute2_1Tx status=0x1 Success gas=400000 gasUsed=49696 costETH=0.000596352 costUSD=0.3430216704 @ ETH/USD=575.2 gasPrice=12 gwei block=6949 txIx=1 txId=0x8ea36af9148b0cc037ed73bed35fa4f388c6695c55dee4033d279c74d09aa474 @ 1527874664 Fri, 01 Jun 2018 17:37:44 UTC
-contribute2_2Tx status=0x1 Success gas=400000 gasUsed=49696 costETH=0.000596352 costUSD=0.3430216704 @ ETH/USD=575.2 gasPrice=12 gwei block=6949 txIx=0 txId=0x5724a6e3705f1e90dcb0f35e62f52a9ccb2b537b2f82c0d0514660b1f4724519 @ 1527874664 Fri, 01 Jun 2018 17:37:44 UTC
-contribute2_3Tx status=0x0 Failure gas=400000 gasUsed=23382 costETH=0.000280584 costUSD=0.1613919168 @ ETH/USD=575.2 gasPrice=12 gwei block=6949 txIx=2 txId=0x6a36b5ce137dcc5005adbc3933e13527ee5825971b7debd2140b6b1bb86a9135 @ 1527874664 Fri, 01 Jun 2018 17:37:44 UTC
-tokenContractAddress=0x8662046fb8b0a6c03f49dd0a922a5e60c55f8118
+contribute2_1Tx status=0x1 Success gas=400000 gasUsed=49696 costETH=0.000596352 costUSD=0.3430216704 @ ETH/USD=575.2 gasPrice=12 gwei block=12571 txIx=2 txId=0x9e61f8497bad9d012c2f4ee057a113dd28bfaa7c5bf76a34d43e6644ea039e75 @ 1527906628 Sat, 02 Jun 2018 02:30:28 UTC
+contribute2_2Tx status=0x1 Success gas=400000 gasUsed=49696 costETH=0.000596352 costUSD=0.3430216704 @ ETH/USD=575.2 gasPrice=12 gwei block=12571 txIx=1 txId=0x764f8b41df7699e400eca432ace4508fdc9c65707bc672e9ba7635424e0641f6 @ 1527906628 Sat, 02 Jun 2018 02:30:28 UTC
+contribute2_3Tx status=0x0 Failure gas=400000 gasUsed=23382 costETH=0.000280584 costUSD=0.1613919168 @ ETH/USD=575.2 gasPrice=12 gwei block=12571 txIx=0 txId=0x617bad230d2870412b97f66f63653a808f1c18cd59aa6c064c0b97c56ca548aa @ 1527906628 Sat, 02 Jun 2018 02:30:28 UTC
+tokenContractAddress=0x658ce9fb3cf49687a5309121b2794f349b79b9a6
 token.owner=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
 token.withdrawWallet=0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976
 token.tiersSet=true
@@ -271,14 +271,14 @@ token.name=Svandis
 token.decimals=18
 token.totalSupply=400000000
 token.getContractEth=0
-Transfer 0 #6949: _from=0x8662046fb8b0a6c03f49dd0a922a5e60c55f8118 _to=0xa44a08d3f6933c69212114bb66e2df1813651844 _value=200000
-Transfer 1 #6949: _from=0x8662046fb8b0a6c03f49dd0a922a5e60c55f8118 _to=0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0 _value=200000
+Transfer 0 #12571: _from=0x658ce9fb3cf49687a5309121b2794f349b79b9a6 _to=0xa44a08d3f6933c69212114bb66e2df1813651844 _value=200000
+Transfer 1 #12571: _from=0x658ce9fb3cf49687a5309121b2794f349b79b9a6 _to=0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0 _value=200000
 
 ---------- Switch To Tier 2 ----------
  # Account                                             EtherBalanceChange                          Token Name
 -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
- 0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.026573976000000000           0.000000000000000000 Account #0 - Miner
- 1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.023267400000000000           0.000000000000000000 Account #1 - Contract Owner
+ 0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.026468544000000000           0.000000000000000000 Account #0 - Miner
+ 1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.023161968000000000           0.000000000000000000 Account #1 - Contract Owner
  2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976     2200.000000000000000000           0.000000000000000000 Account #2 - Withdraw Wallet
  3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0    -1100.001372704000000000      230000.000000000000000000 Account #3 - Whitelisted #1
  4 0xa44a08d3f6933c69212114bb66e2df1813651844    -1100.001372704000000000      230000.000000000000000000 Account #4 - Whitelisted #2
@@ -288,14 +288,14 @@ Transfer 1 #6949: _from=0x8662046fb8b0a6c03f49dd0a922a5e60c55f8118 _to=0xa33a6c3
  8 0xa88a05d2b88283ce84c8325760b72a64591279a2        0.000000000000000000           0.000000000000000000 Account #8
  9 0xa99a0ae3354c06b1459fd441a32a3f71005d7da0        0.000000000000000000           0.000000000000000000 Account #9 - Company #1
 10 0xaaaa9de1e6c564446ebca0fd102d8bd92093c756        0.000000000000000000           0.000000000000000000 Account #10 - Company #2
-11 0x8662046fb8b0a6c03f49dd0a922a5e60c55f8118        0.000000000000000000   399540000.000000000000000000 Token 'SVN' 'Svandis'
+11 0x658ce9fb3cf49687a5309121b2794f349b79b9a6        0.000000000000000000   399540000.000000000000000000 Token 'SVN' 'Svandis'
 -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
                                                                             400000000.000000000000000000 Total Token Balances
 -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
 
 PASS Switch To Tier 2 - switchTiers(2)
-switchTiers2_1Tx status=0x1 Success gas=400000 gasUsed=28345 costETH=0.00034014 costUSD=0.195648528 @ ETH/USD=575.2 gasPrice=12 gwei block=6951 txIx=0 txId=0xa5331109addfe58e97fa680d3327104b391ed97824ee2074b40bea9cefc6f778 @ 1527874666 Fri, 01 Jun 2018 17:37:46 UTC
-tokenContractAddress=0x8662046fb8b0a6c03f49dd0a922a5e60c55f8118
+switchTiers2_1Tx status=0x1 Success gas=400000 gasUsed=28345 costETH=0.00034014 costUSD=0.195648528 @ ETH/USD=575.2 gasPrice=12 gwei block=12573 txIx=0 txId=0x05154b739bac070337bcf5b86093f60445e1b67542154fbf2e0c77f2cfa7261d @ 1527906630 Sat, 02 Jun 2018 02:30:30 UTC
+tokenContractAddress=0x658ce9fb3cf49687a5309121b2794f349b79b9a6
 token.owner=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
 token.withdrawWallet=0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976
 token.tiersSet=true
@@ -311,8 +311,8 @@ token.getContractEth=0
 ---------- Contribute #3 - Tier 2 ----------
  # Account                                             EtherBalanceChange                          Token Name
 -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
- 0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.028047264000000000           0.000000000000000000 Account #0 - Miner
- 1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.023267400000000000           0.000000000000000000 Account #1 - Contract Owner
+ 0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.027941832000000000           0.000000000000000000 Account #0 - Miner
+ 1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.023161968000000000           0.000000000000000000 Account #1 - Contract Owner
  2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976    22200.000000000000000000           0.000000000000000000 Account #2 - Withdraw Wallet
  3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0   -11100.001969056000000000     1230000.000000000000000000 Account #3 - Whitelisted #1
  4 0xa44a08d3f6933c69212114bb66e2df1813651844   -11100.001969056000000000     1230000.000000000000000000 Account #4 - Whitelisted #2
@@ -322,7 +322,7 @@ token.getContractEth=0
  8 0xa88a05d2b88283ce84c8325760b72a64591279a2        0.000000000000000000           0.000000000000000000 Account #8
  9 0xa99a0ae3354c06b1459fd441a32a3f71005d7da0        0.000000000000000000           0.000000000000000000 Account #9 - Company #1
 10 0xaaaa9de1e6c564446ebca0fd102d8bd92093c756        0.000000000000000000           0.000000000000000000 Account #10 - Company #2
-11 0x8662046fb8b0a6c03f49dd0a922a5e60c55f8118        0.000000000000000000   397540000.000000000000000000 Token 'SVN' 'Svandis'
+11 0x658ce9fb3cf49687a5309121b2794f349b79b9a6        0.000000000000000000   397540000.000000000000000000 Token 'SVN' 'Svandis'
 -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
                                                                             400000000.000000000000000000 Total Token Balances
 -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
@@ -330,10 +330,10 @@ token.getContractEth=0
 PASS Contribute #3 - Tier 2 - ac3 contribute 10000 ETH
 PASS Contribute #3 - Tier 2 - ac4 contribute 10000 ETH
 PASS Contribute #3 - Tier 2 - ac5 contribute 10000 ETH - Expecting failure as not whitelisted
-contribute3_1Tx status=0x1 Success gas=400000 gasUsed=49696 costETH=0.000596352 costUSD=0.3430216704 @ ETH/USD=575.2 gasPrice=12 gwei block=6954 txIx=1 txId=0xaff52a8200eb26bdbae450489b4c55387ebd254ec5bd1576057e895b3e724a40 @ 1527874669 Fri, 01 Jun 2018 17:37:49 UTC
-contribute3_2Tx status=0x1 Success gas=400000 gasUsed=49696 costETH=0.000596352 costUSD=0.3430216704 @ ETH/USD=575.2 gasPrice=12 gwei block=6954 txIx=0 txId=0x25470a3d3b7bdc8598944813cb30b0cc2918f723c3fe1b1e7d62c7a75080a008 @ 1527874669 Fri, 01 Jun 2018 17:37:49 UTC
-contribute3_3Tx status=0x0 Failure gas=400000 gasUsed=23382 costETH=0.000280584 costUSD=0.1613919168 @ ETH/USD=575.2 gasPrice=12 gwei block=6954 txIx=2 txId=0x6948f8b48205e1fdf9955af7d0aeac816a435a55d3b03b82e3a7cbb834489817 @ 1527874669 Fri, 01 Jun 2018 17:37:49 UTC
-tokenContractAddress=0x8662046fb8b0a6c03f49dd0a922a5e60c55f8118
+contribute3_1Tx status=0x1 Success gas=400000 gasUsed=49696 costETH=0.000596352 costUSD=0.3430216704 @ ETH/USD=575.2 gasPrice=12 gwei block=12575 txIx=0 txId=0x9aa88083275d56c3ab2c74f9351e7e1a26ceb9a07fd19a9cc8b2de2b59d83aa6 @ 1527906632 Sat, 02 Jun 2018 02:30:32 UTC
+contribute3_2Tx status=0x1 Success gas=400000 gasUsed=49696 costETH=0.000596352 costUSD=0.3430216704 @ ETH/USD=575.2 gasPrice=12 gwei block=12575 txIx=2 txId=0x210d7003747b805b9b50d505b094c8b055b95f7d157ae3fb2172a3f1d58d5868 @ 1527906632 Sat, 02 Jun 2018 02:30:32 UTC
+contribute3_3Tx status=0x0 Failure gas=400000 gasUsed=23382 costETH=0.000280584 costUSD=0.1613919168 @ ETH/USD=575.2 gasPrice=12 gwei block=12575 txIx=1 txId=0xe0932e19ea87c20bb797e5ec49e10e0f5d623db14317fde723e8ee9bb905c9fc @ 1527906632 Sat, 02 Jun 2018 02:30:32 UTC
+tokenContractAddress=0x658ce9fb3cf49687a5309121b2794f349b79b9a6
 token.owner=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
 token.withdrawWallet=0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976
 token.tiersSet=true
@@ -345,14 +345,14 @@ token.name=Svandis
 token.decimals=18
 token.totalSupply=400000000
 token.getContractEth=0
-Transfer 0 #6954: _from=0x8662046fb8b0a6c03f49dd0a922a5e60c55f8118 _to=0xa44a08d3f6933c69212114bb66e2df1813651844 _value=1000000
-Transfer 1 #6954: _from=0x8662046fb8b0a6c03f49dd0a922a5e60c55f8118 _to=0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0 _value=1000000
+Transfer 0 #12575: _from=0x658ce9fb3cf49687a5309121b2794f349b79b9a6 _to=0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0 _value=1000000
+Transfer 1 #12575: _from=0x658ce9fb3cf49687a5309121b2794f349b79b9a6 _to=0xa44a08d3f6933c69212114bb66e2df1813651844 _value=1000000
 
 ---------- Company Tokens ----------
  # Account                                             EtherBalanceChange                          Token Name
 -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
- 0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.028876224000000000           0.000000000000000000 Account #0 - Miner
- 1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.023267400000000000           0.000000000000000000 Account #1 - Contract Owner
+ 0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.028770792000000000           0.000000000000000000 Account #0 - Miner
+ 1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.023161968000000000           0.000000000000000000 Account #1 - Contract Owner
  2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976    22200.000000000000000000           0.000000000000000000 Account #2 - Withdraw Wallet
  3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0   -11100.001969056000000000     1230000.000000000000000000 Account #3 - Whitelisted #1
  4 0xa44a08d3f6933c69212114bb66e2df1813651844   -11100.001969056000000000     1230000.000000000000000000 Account #4 - Whitelisted #2
@@ -360,18 +360,18 @@ Transfer 1 #6954: _from=0x8662046fb8b0a6c03f49dd0a922a5e60c55f8118 _to=0xa33a6c3
  6 0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9        0.000000000000000000           0.000000000000000000 Account #6
  7 0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec        0.000000000000000000           0.000000000000000000 Account #7
  8 0xa88a05d2b88283ce84c8325760b72a64591279a2        0.000000000000000000           0.000000000000000000 Account #8
- 9 0xa99a0ae3354c06b1459fd441a32a3f71005d7da0       -0.000492636000000000   100000000.000000000000000000 Account #9 - Company #1
-10 0xaaaa9de1e6c564446ebca0fd102d8bd92093c756       -0.000336324000000000   297540000.000000000000000000 Account #10 - Company #2
-11 0x8662046fb8b0a6c03f49dd0a922a5e60c55f8118        0.000000000000000000           0.000000000000000000 Token 'SVN' 'Svandis'
+ 9 0xa99a0ae3354c06b1459fd441a32a3f71005d7da0       -0.000336324000000000   100000000.000000000000000000 Account #9 - Company #1
+10 0xaaaa9de1e6c564446ebca0fd102d8bd92093c756       -0.000492636000000000   297540000.000000000000000000 Account #10 - Company #2
+11 0x658ce9fb3cf49687a5309121b2794f349b79b9a6        0.000000000000000000           0.000000000000000000 Token 'SVN' 'Svandis'
 -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
                                                                             400000000.000000000000000000 Total Token Balances
 -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
 
 PASS Company Tokens - ac9 takeCompanyTokensOwnership()
 PASS Company Tokens - ac10 takeCompanyTokensOwnership()
-takeCompanyTokens_1Tx status=0x1 Success gas=400000 gasUsed=41053 costETH=0.000492636 costUSD=0.2833642272 @ ETH/USD=575.2 gasPrice=12 gwei block=6956 txIx=0 txId=0x1824153a6465718e54cb898cc19972c91de10b5b2be9ce4d28ef9ffb932d4791 @ 1527874671 Fri, 01 Jun 2018 17:37:51 UTC
-takeCompanyTokens_2Tx status=0x1 Success gas=400000 gasUsed=28027 costETH=0.000336324 costUSD=0.1934535648 @ ETH/USD=575.2 gasPrice=12 gwei block=6956 txIx=1 txId=0x36ce1126bf81e754698180a034cbea559a27676ef5ad3188a6cf1101701946e6 @ 1527874671 Fri, 01 Jun 2018 17:37:51 UTC
-tokenContractAddress=0x8662046fb8b0a6c03f49dd0a922a5e60c55f8118
+takeCompanyTokens_1Tx status=0x1 Success gas=400000 gasUsed=28027 costETH=0.000336324 costUSD=0.1934535648 @ ETH/USD=575.2 gasPrice=12 gwei block=12577 txIx=1 txId=0x635cf29fc5b9855f575068da031a5b0d9be4d5f17fc5ab813745dff8b61a424f @ 1527906634 Sat, 02 Jun 2018 02:30:34 UTC
+takeCompanyTokens_2Tx status=0x1 Success gas=400000 gasUsed=41053 costETH=0.000492636 costUSD=0.2833642272 @ ETH/USD=575.2 gasPrice=12 gwei block=12577 txIx=0 txId=0xf8d8bd19e32af73e1bfefd5efb4e30434ea2be131aa51ca8369cbf00d62ba411 @ 1527906634 Sat, 02 Jun 2018 02:30:34 UTC
+tokenContractAddress=0x658ce9fb3cf49687a5309121b2794f349b79b9a6
 token.owner=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
 token.withdrawWallet=0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976
 token.tiersSet=true
@@ -383,24 +383,24 @@ token.name=Svandis
 token.decimals=18
 token.totalSupply=400000000
 token.getContractEth=0
-Transfer 0 #6956: _from=0x8662046fb8b0a6c03f49dd0a922a5e60c55f8118 _to=0xa99a0ae3354c06b1459fd441a32a3f71005d7da0 _value=100000000
-Transfer 1 #6956: _from=0x8662046fb8b0a6c03f49dd0a922a5e60c55f8118 _to=0xaaaa9de1e6c564446ebca0fd102d8bd92093c756 _value=297540000
+Transfer 0 #12577: _from=0x658ce9fb3cf49687a5309121b2794f349b79b9a6 _to=0xaaaa9de1e6c564446ebca0fd102d8bd92093c756 _value=297540000
+Transfer 1 #12577: _from=0x658ce9fb3cf49687a5309121b2794f349b79b9a6 _to=0xa99a0ae3354c06b1459fd441a32a3f71005d7da0 _value=100000000
 
 ---------- Move Tokens ----------
  # Account                                             EtherBalanceChange                          Token Name
 -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
- 0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.030590064000000000           0.000000000000000000 Account #0 - Miner
- 1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.023267400000000000           0.000000000000000000 Account #1 - Contract Owner
+ 0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.030482460000000000           0.000000000000000000 Account #0 - Miner
+ 1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.023161968000000000           0.000000000000000000 Account #1 - Contract Owner
  2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976    22200.000000000000000000           0.000000000000000000 Account #2 - Withdraw Wallet
  3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0   -11100.002597436000000000     1229999.000000000000000000 Account #3 - Whitelisted #1
  4 0xa44a08d3f6933c69212114bb66e2df1813651844   -11100.002516280000000000     1229998.000000000000000000 Account #4 - Whitelisted #2
  5 0xa55a151eb00fded1634d27d1127b4be4627079ea       -0.000841752000000000           1.000000000000000000 Account #5 - Not Whitelisted
- 6 0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9       -0.000538236000000000           0.000000000000000000 Account #6
+ 6 0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9       -0.000536064000000000           0.000000000000000000 Account #6
  7 0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec        0.000000000000000000           2.000000000000000000 Account #7
  8 0xa88a05d2b88283ce84c8325760b72a64591279a2        0.000000000000000000           0.000000000000000000 Account #8
- 9 0xa99a0ae3354c06b1459fd441a32a3f71005d7da0       -0.000492636000000000   100000000.000000000000000000 Account #9 - Company #1
-10 0xaaaa9de1e6c564446ebca0fd102d8bd92093c756       -0.000336324000000000   297540000.000000000000000000 Account #10 - Company #2
-11 0x8662046fb8b0a6c03f49dd0a922a5e60c55f8118        0.000000000000000000           0.000000000000000000 Token 'SVN' 'Svandis'
+ 9 0xa99a0ae3354c06b1459fd441a32a3f71005d7da0       -0.000336324000000000   100000000.000000000000000000 Account #9 - Company #1
+10 0xaaaa9de1e6c564446ebca0fd102d8bd92093c756       -0.000492636000000000   297540000.000000000000000000 Account #10 - Company #2
+11 0x658ce9fb3cf49687a5309121b2794f349b79b9a6        0.000000000000000000           0.000000000000000000 Token 'SVN' 'Svandis'
 -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
                                                                             400000000.000000000000000000 Total Token Balances
 -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
@@ -408,10 +408,10 @@ Transfer 1 #6956: _from=0x8662046fb8b0a6c03f49dd0a922a5e60c55f8118 _to=0xaaaa9de
 PASS Move Tokens - transfer 1 tokens ac3 -> ac5
 PASS Move Tokens - approve 2 tokens ac4 -> ac6
 PASS Move Tokens - transferFrom 2 tokens ac4 -> ac7 by ac6
-moveTokens1Tx status=0x1 Success gas=100000 gasUsed=52365 costETH=0.00062838 costUSD=0.361444176 @ ETH/USD=575.2 gasPrice=12 gwei block=6958 txIx=1 txId=0x80a1280795160680e104ac3e36b16341d48ebcfc1073a263833289bab58b1e8d @ 1527874673 Fri, 01 Jun 2018 17:37:53 UTC
-moveTokens2Tx status=0x1 Success gas=100000 gasUsed=45602 costETH=0.000547224 costUSD=0.3147632448 @ ETH/USD=575.2 gasPrice=12 gwei block=6958 txIx=0 txId=0x2f8badfbc5d9f03718801ed4b6608c5c3d01b2ed464805e8653683279780c5b7 @ 1527874673 Fri, 01 Jun 2018 17:37:53 UTC
-moveTokens3Tx status=0x1 Success gas=100000 gasUsed=44853 costETH=0.000538236 costUSD=0.3095933472 @ ETH/USD=575.2 gasPrice=12 gwei block=6960 txIx=0 txId=0x84312d9948ae4209f9c0026832560e6333676bba4e8021f5f34462172201a9e8 @ 1527874675 Fri, 01 Jun 2018 17:37:55 UTC
-tokenContractAddress=0x8662046fb8b0a6c03f49dd0a922a5e60c55f8118
+moveTokens1Tx status=0x1 Success gas=100000 gasUsed=52365 costETH=0.00062838 costUSD=0.361444176 @ ETH/USD=575.2 gasPrice=12 gwei block=12579 txIx=0 txId=0xbfbef89ebd2941e072531930187fac1d81cef82ecb1b5fc0264ca11cf3933db9 @ 1527906636 Sat, 02 Jun 2018 02:30:36 UTC
+moveTokens2Tx status=0x1 Success gas=100000 gasUsed=45602 costETH=0.000547224 costUSD=0.3147632448 @ ETH/USD=575.2 gasPrice=12 gwei block=12579 txIx=1 txId=0x79deb06d5d1d611173260c338855b6f7df2619a11cf491c71f89746ceb38aa26 @ 1527906636 Sat, 02 Jun 2018 02:30:36 UTC
+moveTokens3Tx status=0x1 Success gas=100000 gasUsed=44672 costETH=0.000536064 costUSD=0.3083440128 @ ETH/USD=575.2 gasPrice=12 gwei block=12581 txIx=0 txId=0x042a8ce0ce83f0eef6a3a9fce478e42f8615d0845efa4edcf9788461f3487caf @ 1527906638 Sat, 02 Jun 2018 02:30:38 UTC
+tokenContractAddress=0x658ce9fb3cf49687a5309121b2794f349b79b9a6
 token.owner=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
 token.withdrawWallet=0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976
 token.tiersSet=true
@@ -423,25 +423,25 @@ token.name=Svandis
 token.decimals=18
 token.totalSupply=400000000
 token.getContractEth=0
-Approval 0 #6958 _owner=0xa44a08d3f6933c69212114bb66e2df1813651844 _spender=0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9 _value=2
-Transfer 0 #6958: _from=0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0 _to=0xa55a151eb00fded1634d27d1127b4be4627079ea _value=1
-Transfer 1 #6960: _from=0xa44a08d3f6933c69212114bb66e2df1813651844 _to=0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec _value=2
+Approval 0 #12579 _owner=0xa44a08d3f6933c69212114bb66e2df1813651844 _spender=0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9 _value=2
+Transfer 0 #12579: _from=0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0 _to=0xa55a151eb00fded1634d27d1127b4be4627079ea _value=1
+Transfer 1 #12581: _from=0xa44a08d3f6933c69212114bb66e2df1813651844 _to=0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec _value=2
 
 ---------- Move Zero Tokens ----------
  # Account                                             EtherBalanceChange                          Token Name
 -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
- 0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.031930080000000000           0.000000000000000000 Account #0 - Miner
- 1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.023267400000000000           0.000000000000000000 Account #1 - Contract Owner
+ 0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.031820304000000000           0.000000000000000000 Account #0 - Miner
+ 1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.023161968000000000           0.000000000000000000 Account #1 - Contract Owner
  2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976    22200.000000000000000000           0.000000000000000000 Account #2 - Withdraw Wallet
  3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0   -11100.003041208000000000     1229999.000000000000000000 Account #3 - Whitelisted #1
  4 0xa44a08d3f6933c69212114bb66e2df1813651844   -11100.002878896000000000     1229998.000000000000000000 Account #4 - Whitelisted #2
  5 0xa55a151eb00fded1634d27d1127b4be4627079ea       -0.000841752000000000           1.000000000000000000 Account #5 - Not Whitelisted
- 6 0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9       -0.001071864000000000           0.000000000000000000 Account #6
+ 6 0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9       -0.001067520000000000           0.000000000000000000 Account #6
  7 0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec        0.000000000000000000           2.000000000000000000 Account #7
  8 0xa88a05d2b88283ce84c8325760b72a64591279a2        0.000000000000000000           0.000000000000000000 Account #8
- 9 0xa99a0ae3354c06b1459fd441a32a3f71005d7da0       -0.000492636000000000   100000000.000000000000000000 Account #9 - Company #1
-10 0xaaaa9de1e6c564446ebca0fd102d8bd92093c756       -0.000336324000000000   297540000.000000000000000000 Account #10 - Company #2
-11 0x8662046fb8b0a6c03f49dd0a922a5e60c55f8118        0.000000000000000000           0.000000000000000000 Token 'SVN' 'Svandis'
+ 9 0xa99a0ae3354c06b1459fd441a32a3f71005d7da0       -0.000336324000000000   100000000.000000000000000000 Account #9 - Company #1
+10 0xaaaa9de1e6c564446ebca0fd102d8bd92093c756       -0.000492636000000000   297540000.000000000000000000 Account #10 - Company #2
+11 0x658ce9fb3cf49687a5309121b2794f349b79b9a6        0.000000000000000000           0.000000000000000000 Token 'SVN' 'Svandis'
 -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
                                                                             400000000.000000000000000000 Total Token Balances
 -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
@@ -449,10 +449,10 @@ Transfer 1 #6960: _from=0xa44a08d3f6933c69212114bb66e2df1813651844 _to=0xa77a2b9
 PASS Move Zero Tokens - transfer 0 tokens ac3 -> ac5
 PASS Move Zero Tokens - approve 0 tokens ac4 -> ac6
 PASS Move Zero Tokens - transferFrom 0 tokens ac4 -> ac7 by ac6
-moveZeroTokens1Tx status=0x1 Success gas=100000 gasUsed=36981 costETH=0.000443772 costUSD=0.2552576544 @ ETH/USD=575.2 gasPrice=12 gwei block=6962 txIx=0 txId=0x3c14b55d8d04f8a7c15c84fdc5b518219eaf1bf1274bd7778a597ede0ae9fd87 @ 1527874677 Fri, 01 Jun 2018 17:37:57 UTC
-moveZeroTokens2Tx status=0x1 Success gas=100000 gasUsed=30218 costETH=0.000362616 costUSD=0.2085767232 @ ETH/USD=575.2 gasPrice=12 gwei block=6962 txIx=1 txId=0x9bcbccd03503498ad99a9a3bee9b6610dcbca46fd76eb57d868ab39d871df0a8 @ 1527874677 Fri, 01 Jun 2018 17:37:57 UTC
-moveZeroTokens3Tx status=0x1 Success gas=100000 gasUsed=44469 costETH=0.000533628 costUSD=0.3069428256 @ ETH/USD=575.2 gasPrice=12 gwei block=6964 txIx=0 txId=0x896466418afacfa19a1bf4221683a40277bc4d4aca987ccaff12aa918d544f3e @ 1527874679 Fri, 01 Jun 2018 17:37:59 UTC
-tokenContractAddress=0x8662046fb8b0a6c03f49dd0a922a5e60c55f8118
+moveZeroTokens1Tx status=0x1 Success gas=100000 gasUsed=36981 costETH=0.000443772 costUSD=0.2552576544 @ ETH/USD=575.2 gasPrice=12 gwei block=12583 txIx=0 txId=0x9a63970e2484cedd0e07c63f779fc29217b652e14c6799dcd832253cf5611927 @ 1527906640 Sat, 02 Jun 2018 02:30:40 UTC
+moveZeroTokens2Tx status=0x1 Success gas=100000 gasUsed=30218 costETH=0.000362616 costUSD=0.2085767232 @ ETH/USD=575.2 gasPrice=12 gwei block=12584 txIx=0 txId=0x46deca8f50f3765d815968ffaf5b060fffb6ec5b7845a76873c6e68f6f400b2e @ 1527906641 Sat, 02 Jun 2018 02:30:41 UTC
+moveZeroTokens3Tx status=0x1 Success gas=100000 gasUsed=44288 costETH=0.000531456 costUSD=0.3056934912 @ ETH/USD=575.2 gasPrice=12 gwei block=12586 txIx=0 txId=0x1bd3525f653a93ad64e0d451849969f7e2fa1a6acc06e870af839c36c5e36389 @ 1527906643 Sat, 02 Jun 2018 02:30:43 UTC
+tokenContractAddress=0x658ce9fb3cf49687a5309121b2794f349b79b9a6
 token.owner=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
 token.withdrawWallet=0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976
 token.tiersSet=true
@@ -464,25 +464,25 @@ token.name=Svandis
 token.decimals=18
 token.totalSupply=400000000
 token.getContractEth=0
-Approval 0 #6962 _owner=0xa44a08d3f6933c69212114bb66e2df1813651844 _spender=0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9 _value=0
-Transfer 0 #6962: _from=0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0 _to=0xa55a151eb00fded1634d27d1127b4be4627079ea _value=0
-Transfer 1 #6964: _from=0xa44a08d3f6933c69212114bb66e2df1813651844 _to=0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec _value=0
+Approval 0 #12584 _owner=0xa44a08d3f6933c69212114bb66e2df1813651844 _spender=0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9 _value=0
+Transfer 0 #12583: _from=0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0 _to=0xa55a151eb00fded1634d27d1127b4be4627079ea _value=0
+Transfer 1 #12586: _from=0xa44a08d3f6933c69212114bb66e2df1813651844 _to=0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec _value=0
 
 ---------- Move Too Many Tokens ----------
  # Account                                             EtherBalanceChange                          Token Name
 -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
- 0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.033083088000000000           0.000000000000000000 Account #0 - Miner
- 1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.023267400000000000           0.000000000000000000 Account #1 - Contract Owner
+ 0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.032973312000000000           0.000000000000000000 Account #0 - Miner
+ 1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.023161968000000000           0.000000000000000000 Account #1 - Contract Owner
  2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976    22200.000000000000000000           0.000000000000000000 Account #2 - Withdraw Wallet
  3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0   -11100.003334896000000000     1229999.000000000000000000 Account #3 - Whitelisted #1
  4 0xa44a08d3f6933c69212114bb66e2df1813651844   -11100.003427656000000000     1229998.000000000000000000 Account #4 - Whitelisted #2
  5 0xa55a151eb00fded1634d27d1127b4be4627079ea       -0.000841752000000000           1.000000000000000000 Account #5 - Not Whitelisted
- 6 0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9       -0.001382424000000000           0.000000000000000000 Account #6
+ 6 0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9       -0.001378080000000000           0.000000000000000000 Account #6
  7 0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec        0.000000000000000000           2.000000000000000000 Account #7
  8 0xa88a05d2b88283ce84c8325760b72a64591279a2        0.000000000000000000           0.000000000000000000 Account #8
- 9 0xa99a0ae3354c06b1459fd441a32a3f71005d7da0       -0.000492636000000000   100000000.000000000000000000 Account #9 - Company #1
-10 0xaaaa9de1e6c564446ebca0fd102d8bd92093c756       -0.000336324000000000   297540000.000000000000000000 Account #10 - Company #2
-11 0x8662046fb8b0a6c03f49dd0a922a5e60c55f8118        0.000000000000000000           0.000000000000000000 Token 'SVN' 'Svandis'
+ 9 0xa99a0ae3354c06b1459fd441a32a3f71005d7da0       -0.000336324000000000   100000000.000000000000000000 Account #9 - Company #1
+10 0xaaaa9de1e6c564446ebca0fd102d8bd92093c756       -0.000492636000000000   297540000.000000000000000000 Account #10 - Company #2
+11 0x658ce9fb3cf49687a5309121b2794f349b79b9a6        0.000000000000000000           0.000000000000000000 Token 'SVN' 'Svandis'
 -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
                                                                             400000000.000000000000000000 Total Token Balances
 -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
@@ -490,10 +490,10 @@ Transfer 1 #6964: _from=0xa44a08d3f6933c69212114bb66e2df1813651844 _to=0xa77a2b9
 PASS Move Too Many Tokens - transfer 10,000,000 tokens ac4 -> ac6 - expecting failure
 PASS Move Too Many Tokens - approve 10,000,000 tokens ac5 -> ac7
 PASS Move Too Many Tokens - transferFrom 10,000,000 tokens ac5 -> ac8 by ac7 - expecting failure
-moveTooManyTokens1Tx status=0x0 Failure gas=100000 gasUsed=24474 costETH=0.000293688 costUSD=0.1689293376 @ ETH/USD=575.2 gasPrice=12 gwei block=6966 txIx=1 txId=0x53a632578a0e632a0a828092093b746bd94f5e642b9d1a993e5de6ce9e3c3c38 @ 1527874681 Fri, 01 Jun 2018 17:38:01 UTC
-moveTooManyTokens2Tx status=0x1 Success gas=100000 gasUsed=45730 costETH=0.00054876 costUSD=0.315646752 @ ETH/USD=575.2 gasPrice=12 gwei block=6966 txIx=0 txId=0x77c94f4a0f6d9b5f6e21b77fed4f04004b38f1ab41f4c017122a3422d9ad1ef1 @ 1527874681 Fri, 01 Jun 2018 17:38:01 UTC
-moveTooManyTokens3Tx status=0x0 Failure gas=100000 gasUsed=25880 costETH=0.00031056 costUSD=0.178634112 @ ETH/USD=575.2 gasPrice=12 gwei block=6968 txIx=0 txId=0x071b91429f91d0194bda26b75914e0f38c5d41de4a5be9b8cc1060987ccc84a2 @ 1527874683 Fri, 01 Jun 2018 17:38:03 UTC
-tokenContractAddress=0x8662046fb8b0a6c03f49dd0a922a5e60c55f8118
+moveTooManyTokens1Tx status=0x0 Failure gas=100000 gasUsed=24474 costETH=0.000293688 costUSD=0.1689293376 @ ETH/USD=575.2 gasPrice=12 gwei block=12588 txIx=0 txId=0x781520c3562ec21aaaa72ff15f064e7886265c85f3af6196390f8754f14a2d54 @ 1527906645 Sat, 02 Jun 2018 02:30:45 UTC
+moveTooManyTokens2Tx status=0x1 Success gas=100000 gasUsed=45730 costETH=0.00054876 costUSD=0.315646752 @ ETH/USD=575.2 gasPrice=12 gwei block=12589 txIx=0 txId=0xafd69902afbfe79f9a080a703036aa8d184c3f3e9fa0c1e252f42a02cf7c3f3f @ 1527906646 Sat, 02 Jun 2018 02:30:46 UTC
+moveTooManyTokens3Tx status=0x0 Failure gas=100000 gasUsed=25880 costETH=0.00031056 costUSD=0.178634112 @ ETH/USD=575.2 gasPrice=12 gwei block=12591 txIx=0 txId=0x8fbfbacb7a247cc921bbd1130a43dfdd5be082f1cebd5db870d79ca780b7c8f1 @ 1527906648 Sat, 02 Jun 2018 02:30:48 UTC
+tokenContractAddress=0x658ce9fb3cf49687a5309121b2794f349b79b9a6
 token.owner=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
 token.withdrawWallet=0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976
 token.tiersSet=true
@@ -505,5 +505,5 @@ token.name=Svandis
 token.decimals=18
 token.totalSupply=400000000
 token.getContractEth=0
-Approval 0 #6966 _owner=0xa44a08d3f6933c69212114bb66e2df1813651844 _spender=0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9 _value=10000000
+Approval 0 #12589 _owner=0xa44a08d3f6933c69212114bb66e2df1813651844 _spender=0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9 _value=10000000
 

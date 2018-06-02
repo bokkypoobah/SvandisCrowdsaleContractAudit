@@ -8,7 +8,7 @@ Source file [../../Sale.sol](../../Sale.sol).
 
 ```javascript
 // BK Ok
-pragma solidity ^0.4.21;
+pragma solidity ^0.4.23;
 
 // BK Ok
 import "./Svandis.sol";
@@ -17,13 +17,14 @@ import "./Svandis.sol";
 contract Sale is Svandis {
     // BK Ok
     using SafeMath for uint256;
+
     // BK Next 2 Ok
-    address owner;
-    address withdrawWallet;
+    address public owner;
+    address public withdrawWallet;
     // BK Next 3 Ok
     bool public tiersSet = false;
     uint8 public currentTier = 0;
-    bool private enableSale = true;
+    bool public enableSale = true;
     // BK Next 3 Ok
     mapping(uint8 => uint256) public tierToRates;
     mapping (address => uint256) public companyAllowed;
@@ -113,7 +114,7 @@ contract Sale is Svandis {
     // BK Ok
 	require(_whitelistedAddresses.length <= 100); //Limit set at 100
 	    // BK Ok
-        for(uint i = 0; i < _whitelistedAddresses.length; i++){
+        for(uint i = 0; i < _whitelistedAddresses.length; i++) {
             // BK Ok
             addToWhitelist(_whitelistedAddresses[i], _quantities[i]);
         }
