@@ -1,6 +1,6 @@
 # Svandis
 
-Source file [../../Svandis.sol](../../Svandis.sol).
+Source file [../../contracts/Svandis.sol](../../contracts/Svandis.sol).
 
 <br />
 

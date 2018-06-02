@@ -1,6 +1,6 @@
 # EIP20Interface
 
-Source file [../../EIP20Interface.sol](../../EIP20Interface.sol).
+Source file [../../contracts/EIP20Interface.sol](../../contracts/EIP20Interface.sol).
 
 <br />
 

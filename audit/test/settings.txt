@@ -1,7 +1,7 @@
 IPCFILE=ipc:./testchain/geth.ipc
 PASSWORD=
 
-SOURCEDIR=../../
+SOURCEDIR=../../contracts/
 
 TOKENSOL=Sale.sol
 TOKENJS=Sale.js

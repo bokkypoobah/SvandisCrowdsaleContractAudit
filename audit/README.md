@@ -9,8 +9,9 @@ Bok Consulting Pty Ltd was commissioned to perform an audit on the Ethereum crow
 This audit has been conducted on Svandis' source code in commits
 [88b8ac4](https://github.com/svandisproject/smart-contract/commit/88b8ac47747e81f23d7e653affc3614691894845),
 [62d4b53](https://github.com/svandisproject/smart-contract/commit/62d4b53fd32ec6f1c650bfc09890661652dae663),
-[de9ebb3](https://github.com/svandisproject/smart-contract/commit/de9ebb3c6fd3295b1f98abef98f2364c744e4652) and
-[2a33eab](https://github.com/svandisproject/smart-contract/commit/2a33eab2c3a0abd8f51ce5d9668c595bca9ff7e3).
+[de9ebb3](https://github.com/svandisproject/smart-contract/commit/de9ebb3c6fd3295b1f98abef98f2364c744e4652),
+[2a33eab](https://github.com/svandisproject/smart-contract/commit/2a33eab2c3a0abd8f51ce5d9668c595bca9ff7e3) and
+[2be689b](https://github.com/svandisproject/smart-contract/commit/2be689bd36e56870e4048dca83c17e8d44dadc58).
 
 No potential vulnerabilities have been identified in the crowdsale/token contract.
 
@@ -70,7 +71,7 @@ No potential vulnerabilities have been identified in the crowdsale/token contrac
 * [x] **LOW IMPORTANCE** The statement `require(_from != address(this));` can be removed from `Svandis.transferFrom(...)`
   * [x] Removed in [2a33eab](https://github.com/svandisproject/smart-contract/commit/2a33eab2c3a0abd8f51ce5d9668c595bca9ff7e3)
 * [ ] **LOW IMPORTANCE** Move *.sol into a *contracts* subdirectory
-  * Developer decided against this
+  * [x] Moved in [2be689b](https://github.com/svandisproject/smart-contract/commit/2be689bd36e56870e4048dca83c17e8d44dadc58)
 
 <br />
 
@@ -173,7 +174,7 @@ in [test/test1results.txt](test/test1results.txt) and the detailed output saved 
 
 ### Excluded - Only Used For Testing
 
-* [../Migrations.sol](../Migrations.sol)
+* [../contracts/Migrations.sol](../contracts/Migrations.sol)
 
 <br />
 

@@ -1,6 +1,6 @@
 # Sale
 
-Source file [../../Sale.sol](../../Sale.sol).
+Source file [../../contracts/Sale.sol](../../contracts/Sale.sol).
 
 <br />
 

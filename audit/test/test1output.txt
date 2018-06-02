@@ -1,7 +1,7 @@
 MODE            = 'test'
 GETHATTACHPOINT = 'ipc:./testchain/geth.ipc'
 PASSWORD        = ''
-SOURCEDIR       = '../../'
+SOURCEDIR       = '../../contracts/'
 TOKENSOL        = 'Sale.sol'
 TOKENJS         = 'Sale.js'
 DEPLOYMENTDATA  = 'deploymentData.js'
@@ -14,7 +14,7 @@ Welcome to the Geth JavaScript console!
 
 instance: Geth/v1.8.6-stable-12683fec/darwin-amd64/go1.10
 coinbase: 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e
-at block: 12546 (Sat, 02 Jun 2018 12:30:03 AEST)
+at block: 14146 (Sat, 02 Jun 2018 12:56:43 AEST)
  datadir: /Users/bok/Projects/SvandisCrowdsaleContractAudit/audit/test/testchain
  modules: admin:1.0 clique:1.0 debug:1.0 eth:1.0 miner:1.0 net:1.0 personal:1.0 rpc:1.0 shh:1.0 txpool:1.0 web3:1.0
 
@@ -96,7 +96,7 @@ undefined
 ... 
 undefined
 > 
-DATA: var tokenAddress="0x658ce9fb3cf49687a5309121b2794f349b79b9a6";
+DATA: var tokenAddress="0x6fd3f3c1fe001ae4ba2c022feaceb94126478321";
 DATA: var tokenAbi=[{"constant":true,"inputs":[{"name":"","type":"address"}],"name":"companyAllowed","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_tier1Rate","type":"uint256"},{"name":"_tier2Rate","type":"uint256"}],"name":"setTiers","outputs":[{"name":"success","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"name","outputs":[{"name":"","type":"string"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_spender","type":"address"},{"name":"_value","type":"uint256"}],"name":"approve","outputs":[{"name":"success","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[],"name":"disableSale","outputs":[{"name":"success","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"totalSupply","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"_whitelisted","type":"address"}],"name":"checkWhitelisted","outputs":[{"name":"quantity","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_whitelisted","type":"address"},{"name":"_quantity","type":"uint256"}],"name":"addToWhitelist","outputs":[{"name":"success","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"_from","type":"address"},{"name":"_to","type":"address"},{"name":"_value","type":"uint256"}],"name":"transferFrom","outputs":[{"name":"success","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[{"name":"","type":"address"}],"name":"balances","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_amount","type":"uint256"}],"name":"withdraw","outputs":[{"name":"success","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"_whitelisted","type":"address"}],"name":"removeFromCompanyWhitelist","outputs":[{"name":"success","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"decimals","outputs":[{"name":"","type":"uint8"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"tokenAddress","type":"address"},{"name":"tokens","type":"uint256"}],"name":"transferAnyEIP20Token","outputs":[{"name":"success","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"_preSaleRate","type":"uint256"}],"name":"setPreSaleRate","outputs":[{"name":"success","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"version","outputs":[{"name":"","type":"string"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"","type":"address"},{"name":"","type":"address"}],"name":"allowed","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"_whitelisted","type":"address"}],"name":"checkCompanyWhitelisted","outputs":[{"name":"quantity","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"_owner","type":"address"}],"name":"balanceOf","outputs":[{"name":"balance","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"","type":"address"}],"name":"contributorAllowed","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"withdrawWallet","outputs":[{"name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_whitelistedAddresses","type":"address[]"},{"name":"_quantities","type":"uint256[]"}],"name":"addMultipleToWhitelist","outputs":[{"name":"success","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"_whitelisted","type":"address"}],"name":"removeFromWhitelist","outputs":[{"name":"success","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"owner","outputs":[{"name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_withdrawalAddress","type":"address"}],"name":"setWithdrawWallet","outputs":[{"name":"success","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"symbol","outputs":[{"name":"","type":"string"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_to","type":"address"},{"name":"_value","type":"uint256"}],"name":"transfer","outputs":[{"name":"success","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"enableSale","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"tiersSet","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[],"name":"buyTokens","outputs":[],"payable":true,"stateMutability":"payable","type":"function"},{"constant":true,"inputs":[],"name":"getContractEth","outputs":[{"name":"value","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"currentTier","outputs":[{"name":"","type":"uint8"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"_owner","type":"address"},{"name":"_spender","type":"address"}],"name":"allowance","outputs":[{"name":"remaining","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"","type":"uint8"}],"name":"tierToRates","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[],"name":"takeCompanyTokensOwnership","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"_whitelisted","type":"address"},{"name":"_quantity","type":"uint256"}],"name":"addToCompanyWhitelist","outputs":[{"name":"success","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"_tier","type":"uint8"}],"name":"switchTiers","outputs":[{"name":"success","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"inputs":[],"payable":false,"stateMutability":"nonpayable","type":"constructor"},{"payable":true,"stateMutability":"payable","type":"fallback"},{"anonymous":false,"inputs":[{"indexed":true,"name":"_from","type":"address"},{"indexed":true,"name":"_to","type":"address"},{"indexed":false,"name":"_value","type":"uint256"}],"name":"Transfer","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"name":"_owner","type":"address"},{"indexed":true,"name":"_spender","type":"address"},{"indexed":false,"name":"_value","type":"uint256"}],"name":"Approval","type":"event"}];
 DATA: var token=eth.contract(tokenAbi).at(tokenAddress);
 RESULT:  # Account                                             EtherBalanceChange                          Token Name
@@ -112,7 +112,7 @@ RESULT:  7 0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec        0.00000000000000000
 RESULT:  8 0xa88a05d2b88283ce84c8325760b72a64591279a2        0.000000000000000000           0.000000000000000000 Account #8
 RESULT:  9 0xa99a0ae3354c06b1459fd441a32a3f71005d7da0        0.000000000000000000           0.000000000000000000 Account #9 - Company #1
 RESULT: 10 0xaaaa9de1e6c564446ebca0fd102d8bd92093c756        0.000000000000000000           0.000000000000000000 Account #10 - Company #2
-RESULT: 11 0x658ce9fb3cf49687a5309121b2794f349b79b9a6        0.000000000000000000   400000000.000000000000000000 Token 'SVN' 'Svandis'
+RESULT: 11 0x6fd3f3c1fe001ae4ba2c022feaceb94126478321        0.000000000000000000   400000000.000000000000000000 Token 'SVN' 'Svandis'
 RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
 RESULT:                                                                             400000000.000000000000000000 Total Token Balances
 RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
@@ -122,10 +122,10 @@ undefined
 RESULT: PASS Deploy Token Contract
 1
 > 
-RESULT: tokenAddress=0x658ce9fb3cf49687a5309121b2794f349b79b9a6 status=0x1 Success gas=6000000 gasUsed=1551561 costETH=0.018618732 costUSD=10.7094946464 @ ETH/USD=575.2 gasPrice=12 gwei block=12556 txIx=0 txId=0xeb2d98ed14aacf0d15f96dd48e692ecc3f60306b13b83a3f4bfa1294961e7909 @ 1527906613 Sat, 02 Jun 2018 02:30:13 UTC
+RESULT: tokenAddress=0x6fd3f3c1fe001ae4ba2c022feaceb94126478321 status=0x1 Success gas=6000000 gasUsed=1551561 costETH=0.018618732 costUSD=10.7094946464 @ ETH/USD=575.2 gasPrice=12 gwei block=14155 txIx=0 txId=0xe88cd8963913a291d015f2afcafe552214e83208161c9c90d08b73d758cc71f0 @ 1527908212 Sat, 02 Jun 2018 02:56:52 UTC
 undefined
 > 
-RESULT: tokenContractAddress=0x658ce9fb3cf49687a5309121b2794f349b79b9a6
+RESULT: tokenContractAddress=0x6fd3f3c1fe001ae4ba2c022feaceb94126478321
 RESULT: token.owner=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
 RESULT: token.withdrawWallet=0x0000000000000000000000000000000000000000
 RESULT: token.tiersSet=false
@@ -171,7 +171,7 @@ RESULT:  7 0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec        0.00000000000000000
 RESULT:  8 0xa88a05d2b88283ce84c8325760b72a64591279a2        0.000000000000000000           0.000000000000000000 Account #8
 RESULT:  9 0xa99a0ae3354c06b1459fd441a32a3f71005d7da0        0.000000000000000000           0.000000000000000000 Account #9 - Company #1
 RESULT: 10 0xaaaa9de1e6c564446ebca0fd102d8bd92093c756        0.000000000000000000           0.000000000000000000 Account #10 - Company #2
-RESULT: 11 0x658ce9fb3cf49687a5309121b2794f349b79b9a6        0.000000000000000000   400000000.000000000000000000 Token 'SVN' 'Svandis'
+RESULT: 11 0x6fd3f3c1fe001ae4ba2c022feaceb94126478321        0.000000000000000000   400000000.000000000000000000 Token 'SVN' 'Svandis'
 RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
 RESULT:                                                                             400000000.000000000000000000 Total Token Balances
 RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
@@ -181,10 +181,10 @@ undefined
 RESULT: PASS Set Withdraw Wallet
 1
 > 
-RESULT: setWithdrawWallet_1Tx status=0x1 Success gas=400000 gasUsed=29204 costETH=0.000350448 costUSD=0.2015776896 @ ETH/USD=575.2 gasPrice=12 gwei block=12559 txIx=0 txId=0x326e7803a7263df5309475f6f09e492add7f4cd44c048f7f253e98af0598e56b @ 1527906616 Sat, 02 Jun 2018 02:30:16 UTC
+RESULT: setWithdrawWallet_1Tx status=0x1 Success gas=400000 gasUsed=29204 costETH=0.000350448 costUSD=0.2015776896 @ ETH/USD=575.2 gasPrice=12 gwei block=14157 txIx=0 txId=0x73b929be55f1c44ff20dfea74b649081c6bf4d64ae71102d4df40b731d58d1b0 @ 1527908214 Sat, 02 Jun 2018 02:56:54 UTC
 undefined
 > 
-RESULT: tokenContractAddress=0x658ce9fb3cf49687a5309121b2794f349b79b9a6
+RESULT: tokenContractAddress=0x6fd3f3c1fe001ae4ba2c022feaceb94126478321
 RESULT: token.owner=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
 RESULT: token.withdrawWallet=0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976
 RESULT: token.tiersSet=false
@@ -236,7 +236,7 @@ RESULT:  7 0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec        0.00000000000000000
 RESULT:  8 0xa88a05d2b88283ce84c8325760b72a64591279a2        0.000000000000000000           0.000000000000000000 Account #8
 RESULT:  9 0xa99a0ae3354c06b1459fd441a32a3f71005d7da0        0.000000000000000000           0.000000000000000000 Account #9 - Company #1
 RESULT: 10 0xaaaa9de1e6c564446ebca0fd102d8bd92093c756        0.000000000000000000           0.000000000000000000 Account #10 - Company #2
-RESULT: 11 0x658ce9fb3cf49687a5309121b2794f349b79b9a6        0.000000000000000000   400000000.000000000000000000 Token 'SVN' 'Svandis'
+RESULT: 11 0x6fd3f3c1fe001ae4ba2c022feaceb94126478321        0.000000000000000000   400000000.000000000000000000 Token 'SVN' 'Svandis'
 RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
 RESULT:                                                                             400000000.000000000000000000 Total Token Balances
 RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
@@ -255,19 +255,19 @@ RESULT: PASS Whitelist - addToCompanyWhitelist(account9, 100000000 tokens)
 RESULT: PASS Whitelist - addToCompanyWhitelist(account10, 200000000 tokens)
 1
 > 
-RESULT: whitelist_1Tx status=0x1 Success gas=400000 gasUsed=44590 costETH=0.00053508 costUSD=0.307778016 @ ETH/USD=575.2 gasPrice=12 gwei block=12561 txIx=0 txId=0x8a12831ec0f2c5ec719debf5154df2474ceec1e18d98d73a9c518d546e976f22 @ 1527906618 Sat, 02 Jun 2018 02:30:18 UTC
+RESULT: whitelist_1Tx status=0x1 Success gas=400000 gasUsed=44590 costETH=0.00053508 costUSD=0.307778016 @ ETH/USD=575.2 gasPrice=12 gwei block=14159 txIx=0 txId=0x6713a41520226cb51943e524a295df29d50c5d9dd29551f38f10a9bb4702a3e0 @ 1527908216 Sat, 02 Jun 2018 02:56:56 UTC
 undefined
 > 
-RESULT: whitelist_2Tx status=0x1 Success gas=400000 gasUsed=46561 costETH=0.000558732 costUSD=0.3213826464 @ ETH/USD=575.2 gasPrice=12 gwei block=12561 txIx=1 txId=0xa2b62cd9aa7ee76c21612e123a2bf34c6f44cc58791e8515100d61eaf21afee6 @ 1527906618 Sat, 02 Jun 2018 02:30:18 UTC
+RESULT: whitelist_2Tx status=0x1 Success gas=400000 gasUsed=46561 costETH=0.000558732 costUSD=0.3213826464 @ ETH/USD=575.2 gasPrice=12 gwei block=14159 txIx=1 txId=0xb780b2e6a8fbe56a7b4ba8e61945e3b191600becd76f9459798b28949f716317 @ 1527908216 Sat, 02 Jun 2018 02:56:56 UTC
 undefined
 > 
-RESULT: whitelist_3Tx status=0x1 Success gas=400000 gasUsed=45139 costETH=0.000541668 costUSD=0.3115674336 @ ETH/USD=575.2 gasPrice=12 gwei block=12561 txIx=2 txId=0xfd0073f702e2ed1bf9e625bc4f34ac433d16d5a0dd2a0a73b2f2ef38a9e716c5 @ 1527906618 Sat, 02 Jun 2018 02:30:18 UTC
+RESULT: whitelist_3Tx status=0x1 Success gas=400000 gasUsed=45139 costETH=0.000541668 costUSD=0.3115674336 @ ETH/USD=575.2 gasPrice=12 gwei block=14159 txIx=2 txId=0x68858031acf20975c2b37efac13bbb38d27080edaa33b7dd6839aab3a25e9acf @ 1527908216 Sat, 02 Jun 2018 02:56:56 UTC
 undefined
 > 
-RESULT: whitelist_4Tx status=0x1 Success gas=400000 gasUsed=45267 costETH=0.000543204 costUSD=0.3124509408 @ ETH/USD=575.2 gasPrice=12 gwei block=12562 txIx=0 txId=0x22108c2e89af55b180f99bec889271a12dc516274e7477cfa10143f7039956c5 @ 1527906619 Sat, 02 Jun 2018 02:30:19 UTC
+RESULT: whitelist_4Tx status=0x1 Success gas=400000 gasUsed=45267 costETH=0.000543204 costUSD=0.3124509408 @ ETH/USD=575.2 gasPrice=12 gwei block=14159 txIx=3 txId=0x5e8eb07623ec8cecf93323dfcfee6de4113dd9b970b31222b401bf2cdb2d1e8c @ 1527908216 Sat, 02 Jun 2018 02:56:56 UTC
 undefined
 > 
-RESULT: tokenContractAddress=0x658ce9fb3cf49687a5309121b2794f349b79b9a6
+RESULT: tokenContractAddress=0x6fd3f3c1fe001ae4ba2c022feaceb94126478321
 RESULT: token.owner=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
 RESULT: token.withdrawWallet=0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976
 RESULT: token.tiersSet=false
@@ -315,7 +315,7 @@ RESULT:  7 0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec        0.00000000000000000
 RESULT:  8 0xa88a05d2b88283ce84c8325760b72a64591279a2        0.000000000000000000           0.000000000000000000 Account #8
 RESULT:  9 0xa99a0ae3354c06b1459fd441a32a3f71005d7da0        0.000000000000000000           0.000000000000000000 Account #9 - Company #1
 RESULT: 10 0xaaaa9de1e6c564446ebca0fd102d8bd92093c756        0.000000000000000000           0.000000000000000000 Account #10 - Company #2
-RESULT: 11 0x658ce9fb3cf49687a5309121b2794f349b79b9a6        0.000000000000000000   400000000.000000000000000000 Token 'SVN' 'Svandis'
+RESULT: 11 0x6fd3f3c1fe001ae4ba2c022feaceb94126478321        0.000000000000000000   400000000.000000000000000000 Token 'SVN' 'Svandis'
 RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
 RESULT:                                                                             400000000.000000000000000000 Total Token Balances
 RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
@@ -328,13 +328,13 @@ RESULT: PASS Set Tiers - setPreSaleRate(300)
 RESULT: PASS Set Tiers - setTiers(200, 100)
 1
 > 
-RESULT: setTiers_1Tx status=0x1 Success gas=400000 gasUsed=42690 costETH=0.00051228 costUSD=0.294663456 @ ETH/USD=575.2 gasPrice=12 gwei block=12564 txIx=0 txId=0x5c3fad4e65bd9b9ea1316828954902188b090e3b13eca3fd7d12c0d52d859c58 @ 1527906621 Sat, 02 Jun 2018 02:30:21 UTC
+RESULT: setTiers_1Tx status=0x1 Success gas=400000 gasUsed=42690 costETH=0.00051228 costUSD=0.294663456 @ ETH/USD=575.2 gasPrice=12 gwei block=14161 txIx=0 txId=0x8cee1ce71764dfe8004b5184b1a4b39744cbea8b553e8f5ab1115893915bcbf4 @ 1527908218 Sat, 02 Jun 2018 02:56:58 UTC
 undefined
 > 
-RESULT: setTiers_2Tx status=0x1 Success gas=400000 gasUsed=68479 costETH=0.000821748 costUSD=0.4726694496 @ ETH/USD=575.2 gasPrice=12 gwei block=12564 txIx=1 txId=0x47ef67b50600deacea2b9f1c1dbfbb65c5398d51daca1e5800c6cf3fe26e0081 @ 1527906621 Sat, 02 Jun 2018 02:30:21 UTC
+RESULT: setTiers_2Tx status=0x1 Success gas=400000 gasUsed=68479 costETH=0.000821748 costUSD=0.4726694496 @ ETH/USD=575.2 gasPrice=12 gwei block=14161 txIx=1 txId=0x5bd3e92950f976aa8552533c5b7916605f73c72d29ba0ab9917e1c716628b103 @ 1527908218 Sat, 02 Jun 2018 02:56:58 UTC
 undefined
 > 
-RESULT: tokenContractAddress=0x658ce9fb3cf49687a5309121b2794f349b79b9a6
+RESULT: tokenContractAddress=0x6fd3f3c1fe001ae4ba2c022feaceb94126478321
 RESULT: token.owner=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
 RESULT: token.withdrawWallet=0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976
 RESULT: token.tiersSet=true
@@ -384,7 +384,7 @@ RESULT:  7 0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec        0.00000000000000000
 RESULT:  8 0xa88a05d2b88283ce84c8325760b72a64591279a2        0.000000000000000000           0.000000000000000000 Account #8
 RESULT:  9 0xa99a0ae3354c06b1459fd441a32a3f71005d7da0        0.000000000000000000           0.000000000000000000 Account #9 - Company #1
 RESULT: 10 0xaaaa9de1e6c564446ebca0fd102d8bd92093c756        0.000000000000000000           0.000000000000000000 Account #10 - Company #2
-RESULT: 11 0x658ce9fb3cf49687a5309121b2794f349b79b9a6        0.000000000000000000   399940000.000000000000000000 Token 'SVN' 'Svandis'
+RESULT: 11 0x6fd3f3c1fe001ae4ba2c022feaceb94126478321        0.000000000000000000   399940000.000000000000000000 Token 'SVN' 'Svandis'
 RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
 RESULT:                                                                             400000000.000000000000000000 Total Token Balances
 RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
@@ -400,16 +400,16 @@ RESULT: PASS Contribute #1 - PreSale - ac4 contribute 100 ETH
 RESULT: PASS Contribute #1 - PreSale - ac5 contribute 100 ETH - Expecting failure as not whitelisted
 1
 > 
-RESULT: contribute1_1Tx status=0x1 Success gas=400000 gasUsed=64696 costETH=0.000776352 costUSD=0.4465576704 @ ETH/USD=575.2 gasPrice=12 gwei block=12566 txIx=1 txId=0xa086c769201d948eee8cec549311024fd86f163790dd5d211927d9c35be8782e @ 1527906623 Sat, 02 Jun 2018 02:30:23 UTC
+RESULT: contribute1_1Tx status=0x1 Success gas=400000 gasUsed=64696 costETH=0.000776352 costUSD=0.4465576704 @ ETH/USD=575.2 gasPrice=12 gwei block=14163 txIx=0 txId=0x62d74072e415802bb00142b61dae9523816d19e85c17c38e14c14e8eadbe82cc @ 1527908220 Sat, 02 Jun 2018 02:57:00 UTC
 undefined
 > 
-RESULT: contribute1_2Tx status=0x1 Success gas=400000 gasUsed=64696 costETH=0.000776352 costUSD=0.4465576704 @ ETH/USD=575.2 gasPrice=12 gwei block=12566 txIx=0 txId=0xfa0d1d7d587a1a58a184380ba246fc9b049f6ce6d9397ccc7df919aea3c5cf52 @ 1527906623 Sat, 02 Jun 2018 02:30:23 UTC
+RESULT: contribute1_2Tx status=0x1 Success gas=400000 gasUsed=64696 costETH=0.000776352 costUSD=0.4465576704 @ ETH/USD=575.2 gasPrice=12 gwei block=14163 txIx=1 txId=0x862b78500fc5084db2b0fc84a38fc7737e8bb8e92061114df026bf5d09f5eef8 @ 1527908220 Sat, 02 Jun 2018 02:57:00 UTC
 undefined
 > 
-RESULT: contribute1_3Tx status=0x0 Failure gas=400000 gasUsed=23382 costETH=0.000280584 costUSD=0.1613919168 @ ETH/USD=575.2 gasPrice=12 gwei block=12566 txIx=2 txId=0xdc9cabaf9ce6d9c8433b4869bea0d18c224445f8a61d7eaddfeeb91bf4a35958 @ 1527906623 Sat, 02 Jun 2018 02:30:23 UTC
+RESULT: contribute1_3Tx status=0x0 Failure gas=400000 gasUsed=23382 costETH=0.000280584 costUSD=0.1613919168 @ ETH/USD=575.2 gasPrice=12 gwei block=14164 txIx=0 txId=0x2ba5e48b61a6806964deaf3a04142753479b1d6fc1dfb313ea57a55a8b4a2041 @ 1527908221 Sat, 02 Jun 2018 02:57:01 UTC
 undefined
 > 
-RESULT: tokenContractAddress=0x658ce9fb3cf49687a5309121b2794f349b79b9a6
+RESULT: tokenContractAddress=0x6fd3f3c1fe001ae4ba2c022feaceb94126478321
 RESULT: token.owner=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
 RESULT: token.withdrawWallet=0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976
 RESULT: token.tiersSet=true
@@ -421,8 +421,8 @@ RESULT: token.name=Svandis
 RESULT: token.decimals=18
 RESULT: token.totalSupply=400000000
 RESULT: token.getContractEth=0
-RESULT: Transfer 0 #12566: _from=0x658ce9fb3cf49687a5309121b2794f349b79b9a6 _to=0xa44a08d3f6933c69212114bb66e2df1813651844 _value=30000
-RESULT: Transfer 1 #12566: _from=0x658ce9fb3cf49687a5309121b2794f349b79b9a6 _to=0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0 _value=30000
+RESULT: Transfer 0 #14163: _from=0x6fd3f3c1fe001ae4ba2c022feaceb94126478321 _to=0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0 _value=30000
+RESULT: Transfer 1 #14163: _from=0x6fd3f3c1fe001ae4ba2c022feaceb94126478321 _to=0xa44a08d3f6933c69212114bb66e2df1813651844 _value=30000
 undefined
 > 
 RESULT: 
@@ -457,7 +457,7 @@ RESULT:  7 0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec        0.00000000000000000
 RESULT:  8 0xa88a05d2b88283ce84c8325760b72a64591279a2        0.000000000000000000           0.000000000000000000 Account #8
 RESULT:  9 0xa99a0ae3354c06b1459fd441a32a3f71005d7da0        0.000000000000000000           0.000000000000000000 Account #9 - Company #1
 RESULT: 10 0xaaaa9de1e6c564446ebca0fd102d8bd92093c756        0.000000000000000000           0.000000000000000000 Account #10 - Company #2
-RESULT: 11 0x658ce9fb3cf49687a5309121b2794f349b79b9a6        0.000000000000000000   399940000.000000000000000000 Token 'SVN' 'Svandis'
+RESULT: 11 0x6fd3f3c1fe001ae4ba2c022feaceb94126478321        0.000000000000000000   399940000.000000000000000000 Token 'SVN' 'Svandis'
 RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
 RESULT:                                                                             400000000.000000000000000000 Total Token Balances
 RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
@@ -467,10 +467,10 @@ undefined
 RESULT: PASS Switch To Tier 1 - switchTiers(1)
 1
 > 
-RESULT: switchTiers1_1Tx status=0x1 Success gas=400000 gasUsed=28328 costETH=0.000339936 costUSD=0.1955311872 @ ETH/USD=575.2 gasPrice=12 gwei block=12569 txIx=0 txId=0x224afd4a30fc97da616612ece0c9d78b590df3bf644bbfb2989fd85b38bba9a6 @ 1527906626 Sat, 02 Jun 2018 02:30:26 UTC
+RESULT: switchTiers1_1Tx status=0x1 Success gas=400000 gasUsed=28328 costETH=0.000339936 costUSD=0.1955311872 @ ETH/USD=575.2 gasPrice=12 gwei block=14166 txIx=0 txId=0x5ae8083a728eb670940f020a7d896dae9074565b8e49a155430fb65fd4bca775 @ 1527908223 Sat, 02 Jun 2018 02:57:03 UTC
 undefined
 > 
-RESULT: tokenContractAddress=0x658ce9fb3cf49687a5309121b2794f349b79b9a6
+RESULT: tokenContractAddress=0x6fd3f3c1fe001ae4ba2c022feaceb94126478321
 RESULT: token.owner=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
 RESULT: token.withdrawWallet=0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976
 RESULT: token.tiersSet=true
@@ -520,7 +520,7 @@ RESULT:  7 0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec        0.00000000000000000
 RESULT:  8 0xa88a05d2b88283ce84c8325760b72a64591279a2        0.000000000000000000           0.000000000000000000 Account #8
 RESULT:  9 0xa99a0ae3354c06b1459fd441a32a3f71005d7da0        0.000000000000000000           0.000000000000000000 Account #9 - Company #1
 RESULT: 10 0xaaaa9de1e6c564446ebca0fd102d8bd92093c756        0.000000000000000000           0.000000000000000000 Account #10 - Company #2
-RESULT: 11 0x658ce9fb3cf49687a5309121b2794f349b79b9a6        0.000000000000000000   399540000.000000000000000000 Token 'SVN' 'Svandis'
+RESULT: 11 0x6fd3f3c1fe001ae4ba2c022feaceb94126478321        0.000000000000000000   399540000.000000000000000000 Token 'SVN' 'Svandis'
 RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
 RESULT:                                                                             400000000.000000000000000000 Total Token Balances
 RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
@@ -536,16 +536,16 @@ RESULT: PASS Contribute #2 - Tier 1 - ac4 contribute 1000 ETH
 RESULT: PASS Contribute #2 - Tier 1 - ac5 contribute 1000 ETH - Expecting failure as not whitelisted
 1
 > 
-RESULT: contribute2_1Tx status=0x1 Success gas=400000 gasUsed=49696 costETH=0.000596352 costUSD=0.3430216704 @ ETH/USD=575.2 gasPrice=12 gwei block=12571 txIx=2 txId=0x9e61f8497bad9d012c2f4ee057a113dd28bfaa7c5bf76a34d43e6644ea039e75 @ 1527906628 Sat, 02 Jun 2018 02:30:28 UTC
+RESULT: contribute2_1Tx status=0x1 Success gas=400000 gasUsed=49696 costETH=0.000596352 costUSD=0.3430216704 @ ETH/USD=575.2 gasPrice=12 gwei block=14168 txIx=0 txId=0x0f0395b050ef26666f24f462a7d980894b0999d6f0f26f662814dfa4753f1099 @ 1527908225 Sat, 02 Jun 2018 02:57:05 UTC
 undefined
 > 
-RESULT: contribute2_2Tx status=0x1 Success gas=400000 gasUsed=49696 costETH=0.000596352 costUSD=0.3430216704 @ ETH/USD=575.2 gasPrice=12 gwei block=12571 txIx=1 txId=0x764f8b41df7699e400eca432ace4508fdc9c65707bc672e9ba7635424e0641f6 @ 1527906628 Sat, 02 Jun 2018 02:30:28 UTC
+RESULT: contribute2_2Tx status=0x1 Success gas=400000 gasUsed=49696 costETH=0.000596352 costUSD=0.3430216704 @ ETH/USD=575.2 gasPrice=12 gwei block=14168 txIx=2 txId=0x492a436dbd9af22be26270b805ade9f3c10513c8510b85211aa0f2bc728e9d34 @ 1527908225 Sat, 02 Jun 2018 02:57:05 UTC
 undefined
 > 
-RESULT: contribute2_3Tx status=0x0 Failure gas=400000 gasUsed=23382 costETH=0.000280584 costUSD=0.1613919168 @ ETH/USD=575.2 gasPrice=12 gwei block=12571 txIx=0 txId=0x617bad230d2870412b97f66f63653a808f1c18cd59aa6c064c0b97c56ca548aa @ 1527906628 Sat, 02 Jun 2018 02:30:28 UTC
+RESULT: contribute2_3Tx status=0x0 Failure gas=400000 gasUsed=23382 costETH=0.000280584 costUSD=0.1613919168 @ ETH/USD=575.2 gasPrice=12 gwei block=14168 txIx=1 txId=0xb40bbf76dbc90db93fc3e127004529d15ccbf21f522696845a40878a66026ced @ 1527908225 Sat, 02 Jun 2018 02:57:05 UTC
 undefined
 > 
-RESULT: tokenContractAddress=0x658ce9fb3cf49687a5309121b2794f349b79b9a6
+RESULT: tokenContractAddress=0x6fd3f3c1fe001ae4ba2c022feaceb94126478321
 RESULT: token.owner=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
 RESULT: token.withdrawWallet=0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976
 RESULT: token.tiersSet=true
@@ -557,8 +557,8 @@ RESULT: token.name=Svandis
 RESULT: token.decimals=18
 RESULT: token.totalSupply=400000000
 RESULT: token.getContractEth=0
-RESULT: Transfer 0 #12571: _from=0x658ce9fb3cf49687a5309121b2794f349b79b9a6 _to=0xa44a08d3f6933c69212114bb66e2df1813651844 _value=200000
-RESULT: Transfer 1 #12571: _from=0x658ce9fb3cf49687a5309121b2794f349b79b9a6 _to=0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0 _value=200000
+RESULT: Transfer 0 #14168: _from=0x6fd3f3c1fe001ae4ba2c022feaceb94126478321 _to=0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0 _value=200000
+RESULT: Transfer 1 #14168: _from=0x6fd3f3c1fe001ae4ba2c022feaceb94126478321 _to=0xa44a08d3f6933c69212114bb66e2df1813651844 _value=200000
 undefined
 > 
 RESULT: 
@@ -593,7 +593,7 @@ RESULT:  7 0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec        0.00000000000000000
 RESULT:  8 0xa88a05d2b88283ce84c8325760b72a64591279a2        0.000000000000000000           0.000000000000000000 Account #8
 RESULT:  9 0xa99a0ae3354c06b1459fd441a32a3f71005d7da0        0.000000000000000000           0.000000000000000000 Account #9 - Company #1
 RESULT: 10 0xaaaa9de1e6c564446ebca0fd102d8bd92093c756        0.000000000000000000           0.000000000000000000 Account #10 - Company #2
-RESULT: 11 0x658ce9fb3cf49687a5309121b2794f349b79b9a6        0.000000000000000000   399540000.000000000000000000 Token 'SVN' 'Svandis'
+RESULT: 11 0x6fd3f3c1fe001ae4ba2c022feaceb94126478321        0.000000000000000000   399540000.000000000000000000 Token 'SVN' 'Svandis'
 RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
 RESULT:                                                                             400000000.000000000000000000 Total Token Balances
 RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
@@ -603,10 +603,10 @@ undefined
 RESULT: PASS Switch To Tier 2 - switchTiers(2)
 1
 > 
-RESULT: switchTiers2_1Tx status=0x1 Success gas=400000 gasUsed=28345 costETH=0.00034014 costUSD=0.195648528 @ ETH/USD=575.2 gasPrice=12 gwei block=12573 txIx=0 txId=0x05154b739bac070337bcf5b86093f60445e1b67542154fbf2e0c77f2cfa7261d @ 1527906630 Sat, 02 Jun 2018 02:30:30 UTC
+RESULT: switchTiers2_1Tx status=0x1 Success gas=400000 gasUsed=28345 costETH=0.00034014 costUSD=0.195648528 @ ETH/USD=575.2 gasPrice=12 gwei block=14170 txIx=0 txId=0x274dd09405aff69c98cada890b1f1755785c0ca864c2425992a486bf5f36b132 @ 1527908227 Sat, 02 Jun 2018 02:57:07 UTC
 undefined
 > 
-RESULT: tokenContractAddress=0x658ce9fb3cf49687a5309121b2794f349b79b9a6
+RESULT: tokenContractAddress=0x6fd3f3c1fe001ae4ba2c022feaceb94126478321
 RESULT: token.owner=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
 RESULT: token.withdrawWallet=0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976
 RESULT: token.tiersSet=true
@@ -656,7 +656,7 @@ RESULT:  7 0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec        0.00000000000000000
 RESULT:  8 0xa88a05d2b88283ce84c8325760b72a64591279a2        0.000000000000000000           0.000000000000000000 Account #8
 RESULT:  9 0xa99a0ae3354c06b1459fd441a32a3f71005d7da0        0.000000000000000000           0.000000000000000000 Account #9 - Company #1
 RESULT: 10 0xaaaa9de1e6c564446ebca0fd102d8bd92093c756        0.000000000000000000           0.000000000000000000 Account #10 - Company #2
-RESULT: 11 0x658ce9fb3cf49687a5309121b2794f349b79b9a6        0.000000000000000000   397540000.000000000000000000 Token 'SVN' 'Svandis'
+RESULT: 11 0x6fd3f3c1fe001ae4ba2c022feaceb94126478321        0.000000000000000000   397540000.000000000000000000 Token 'SVN' 'Svandis'
 RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
 RESULT:                                                                             400000000.000000000000000000 Total Token Balances
 RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
@@ -672,16 +672,16 @@ RESULT: PASS Contribute #3 - Tier 2 - ac4 contribute 10000 ETH
 RESULT: PASS Contribute #3 - Tier 2 - ac5 contribute 10000 ETH - Expecting failure as not whitelisted
 1
 > 
-RESULT: contribute3_1Tx status=0x1 Success gas=400000 gasUsed=49696 costETH=0.000596352 costUSD=0.3430216704 @ ETH/USD=575.2 gasPrice=12 gwei block=12575 txIx=0 txId=0x9aa88083275d56c3ab2c74f9351e7e1a26ceb9a07fd19a9cc8b2de2b59d83aa6 @ 1527906632 Sat, 02 Jun 2018 02:30:32 UTC
+RESULT: contribute3_1Tx status=0x1 Success gas=400000 gasUsed=49696 costETH=0.000596352 costUSD=0.3430216704 @ ETH/USD=575.2 gasPrice=12 gwei block=14172 txIx=0 txId=0x83be03d54aec2284fd787321f92957e929668b70fe2251ebc65b82e8742709f9 @ 1527908229 Sat, 02 Jun 2018 02:57:09 UTC
 undefined
 > 
-RESULT: contribute3_2Tx status=0x1 Success gas=400000 gasUsed=49696 costETH=0.000596352 costUSD=0.3430216704 @ ETH/USD=575.2 gasPrice=12 gwei block=12575 txIx=2 txId=0x210d7003747b805b9b50d505b094c8b055b95f7d157ae3fb2172a3f1d58d5868 @ 1527906632 Sat, 02 Jun 2018 02:30:32 UTC
+RESULT: contribute3_2Tx status=0x1 Success gas=400000 gasUsed=49696 costETH=0.000596352 costUSD=0.3430216704 @ ETH/USD=575.2 gasPrice=12 gwei block=14172 txIx=2 txId=0x3edcccfa45e4739cb575ee845f1aec02ed19384a4f3d512e59c654c291ccb056 @ 1527908229 Sat, 02 Jun 2018 02:57:09 UTC
 undefined
 > 
-RESULT: contribute3_3Tx status=0x0 Failure gas=400000 gasUsed=23382 costETH=0.000280584 costUSD=0.1613919168 @ ETH/USD=575.2 gasPrice=12 gwei block=12575 txIx=1 txId=0xe0932e19ea87c20bb797e5ec49e10e0f5d623db14317fde723e8ee9bb905c9fc @ 1527906632 Sat, 02 Jun 2018 02:30:32 UTC
+RESULT: contribute3_3Tx status=0x0 Failure gas=400000 gasUsed=23382 costETH=0.000280584 costUSD=0.1613919168 @ ETH/USD=575.2 gasPrice=12 gwei block=14172 txIx=1 txId=0x7214e3ff9ef07c1d9644ee6626ee2e99413b43b985ac466e2ac8b073e1f9ba65 @ 1527908229 Sat, 02 Jun 2018 02:57:09 UTC
 undefined
 > 
-RESULT: tokenContractAddress=0x658ce9fb3cf49687a5309121b2794f349b79b9a6
+RESULT: tokenContractAddress=0x6fd3f3c1fe001ae4ba2c022feaceb94126478321
 RESULT: token.owner=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
 RESULT: token.withdrawWallet=0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976
 RESULT: token.tiersSet=true
@@ -693,8 +693,8 @@ RESULT: token.name=Svandis
 RESULT: token.decimals=18
 RESULT: token.totalSupply=400000000
 RESULT: token.getContractEth=0
-RESULT: Transfer 0 #12575: _from=0x658ce9fb3cf49687a5309121b2794f349b79b9a6 _to=0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0 _value=1000000
-RESULT: Transfer 1 #12575: _from=0x658ce9fb3cf49687a5309121b2794f349b79b9a6 _to=0xa44a08d3f6933c69212114bb66e2df1813651844 _value=1000000
+RESULT: Transfer 0 #14172: _from=0x6fd3f3c1fe001ae4ba2c022feaceb94126478321 _to=0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0 _value=1000000
+RESULT: Transfer 1 #14172: _from=0x6fd3f3c1fe001ae4ba2c022feaceb94126478321 _to=0xa44a08d3f6933c69212114bb66e2df1813651844 _value=1000000
 undefined
 > 
 RESULT: 
@@ -729,9 +729,9 @@ RESULT:  5 0xa55a151eb00fded1634d27d1127b4be4627079ea       -0.00084175200000000
 RESULT:  6 0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9        0.000000000000000000           0.000000000000000000 Account #6
 RESULT:  7 0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec        0.000000000000000000           0.000000000000000000 Account #7
 RESULT:  8 0xa88a05d2b88283ce84c8325760b72a64591279a2        0.000000000000000000           0.000000000000000000 Account #8
-RESULT:  9 0xa99a0ae3354c06b1459fd441a32a3f71005d7da0       -0.000336324000000000   100000000.000000000000000000 Account #9 - Company #1
-RESULT: 10 0xaaaa9de1e6c564446ebca0fd102d8bd92093c756       -0.000492636000000000   297540000.000000000000000000 Account #10 - Company #2
-RESULT: 11 0x658ce9fb3cf49687a5309121b2794f349b79b9a6        0.000000000000000000           0.000000000000000000 Token 'SVN' 'Svandis'
+RESULT:  9 0xa99a0ae3354c06b1459fd441a32a3f71005d7da0       -0.000492636000000000   100000000.000000000000000000 Account #9 - Company #1
+RESULT: 10 0xaaaa9de1e6c564446ebca0fd102d8bd92093c756       -0.000336324000000000   297540000.000000000000000000 Account #10 - Company #2
+RESULT: 11 0x6fd3f3c1fe001ae4ba2c022feaceb94126478321        0.000000000000000000           0.000000000000000000 Token 'SVN' 'Svandis'
 RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
 RESULT:                                                                             400000000.000000000000000000 Total Token Balances
 RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
@@ -744,13 +744,13 @@ RESULT: PASS Company Tokens - ac9 takeCompanyTokensOwnership()
 RESULT: PASS Company Tokens - ac10 takeCompanyTokensOwnership()
 1
 > 
-RESULT: takeCompanyTokens_1Tx status=0x1 Success gas=400000 gasUsed=28027 costETH=0.000336324 costUSD=0.1934535648 @ ETH/USD=575.2 gasPrice=12 gwei block=12577 txIx=1 txId=0x635cf29fc5b9855f575068da031a5b0d9be4d5f17fc5ab813745dff8b61a424f @ 1527906634 Sat, 02 Jun 2018 02:30:34 UTC
+RESULT: takeCompanyTokens_1Tx status=0x1 Success gas=400000 gasUsed=41053 costETH=0.000492636 costUSD=0.2833642272 @ ETH/USD=575.2 gasPrice=12 gwei block=14175 txIx=0 txId=0x1fc121aea55244f4c014e7d6b4ac6ae9fb1d6a30740c4f88bf0e449513452501 @ 1527908232 Sat, 02 Jun 2018 02:57:12 UTC
 undefined
 > 
-RESULT: takeCompanyTokens_2Tx status=0x1 Success gas=400000 gasUsed=41053 costETH=0.000492636 costUSD=0.2833642272 @ ETH/USD=575.2 gasPrice=12 gwei block=12577 txIx=0 txId=0xf8d8bd19e32af73e1bfefd5efb4e30434ea2be131aa51ca8369cbf00d62ba411 @ 1527906634 Sat, 02 Jun 2018 02:30:34 UTC
+RESULT: takeCompanyTokens_2Tx status=0x1 Success gas=400000 gasUsed=28027 costETH=0.000336324 costUSD=0.1934535648 @ ETH/USD=575.2 gasPrice=12 gwei block=14175 txIx=1 txId=0xb12023731e63da969a2f9002857001f77d45cc996ce5072de216ca25082d400b @ 1527908232 Sat, 02 Jun 2018 02:57:12 UTC
 undefined
 > 
-RESULT: tokenContractAddress=0x658ce9fb3cf49687a5309121b2794f349b79b9a6
+RESULT: tokenContractAddress=0x6fd3f3c1fe001ae4ba2c022feaceb94126478321
 RESULT: token.owner=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
 RESULT: token.withdrawWallet=0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976
 RESULT: token.tiersSet=true
@@ -762,8 +762,8 @@ RESULT: token.name=Svandis
 RESULT: token.decimals=18
 RESULT: token.totalSupply=400000000
 RESULT: token.getContractEth=0
-RESULT: Transfer 0 #12577: _from=0x658ce9fb3cf49687a5309121b2794f349b79b9a6 _to=0xaaaa9de1e6c564446ebca0fd102d8bd92093c756 _value=297540000
-RESULT: Transfer 1 #12577: _from=0x658ce9fb3cf49687a5309121b2794f349b79b9a6 _to=0xa99a0ae3354c06b1459fd441a32a3f71005d7da0 _value=100000000
+RESULT: Transfer 0 #14175: _from=0x6fd3f3c1fe001ae4ba2c022feaceb94126478321 _to=0xa99a0ae3354c06b1459fd441a32a3f71005d7da0 _value=100000000
+RESULT: Transfer 1 #14175: _from=0x6fd3f3c1fe001ae4ba2c022feaceb94126478321 _to=0xaaaa9de1e6c564446ebca0fd102d8bd92093c756 _value=297540000
 undefined
 > 
 RESULT: 
@@ -803,9 +803,9 @@ RESULT:  5 0xa55a151eb00fded1634d27d1127b4be4627079ea       -0.00084175200000000
 RESULT:  6 0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9       -0.000536064000000000           0.000000000000000000 Account #6
 RESULT:  7 0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec        0.000000000000000000           2.000000000000000000 Account #7
 RESULT:  8 0xa88a05d2b88283ce84c8325760b72a64591279a2        0.000000000000000000           0.000000000000000000 Account #8
-RESULT:  9 0xa99a0ae3354c06b1459fd441a32a3f71005d7da0       -0.000336324000000000   100000000.000000000000000000 Account #9 - Company #1
-RESULT: 10 0xaaaa9de1e6c564446ebca0fd102d8bd92093c756       -0.000492636000000000   297540000.000000000000000000 Account #10 - Company #2
-RESULT: 11 0x658ce9fb3cf49687a5309121b2794f349b79b9a6        0.000000000000000000           0.000000000000000000 Token 'SVN' 'Svandis'
+RESULT:  9 0xa99a0ae3354c06b1459fd441a32a3f71005d7da0       -0.000492636000000000   100000000.000000000000000000 Account #9 - Company #1
+RESULT: 10 0xaaaa9de1e6c564446ebca0fd102d8bd92093c756       -0.000336324000000000   297540000.000000000000000000 Account #10 - Company #2
+RESULT: 11 0x6fd3f3c1fe001ae4ba2c022feaceb94126478321        0.000000000000000000           0.000000000000000000 Token 'SVN' 'Svandis'
 RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
 RESULT:                                                                             400000000.000000000000000000 Total Token Balances
 RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
@@ -821,16 +821,16 @@ RESULT: PASS Move Tokens - approve 2 tokens ac4 -> ac6
 RESULT: PASS Move Tokens - transferFrom 2 tokens ac4 -> ac7 by ac6
 1
 > 
-RESULT: moveTokens1Tx status=0x1 Success gas=100000 gasUsed=52365 costETH=0.00062838 costUSD=0.361444176 @ ETH/USD=575.2 gasPrice=12 gwei block=12579 txIx=0 txId=0xbfbef89ebd2941e072531930187fac1d81cef82ecb1b5fc0264ca11cf3933db9 @ 1527906636 Sat, 02 Jun 2018 02:30:36 UTC
+RESULT: moveTokens1Tx status=0x1 Success gas=100000 gasUsed=52365 costETH=0.00062838 costUSD=0.361444176 @ ETH/USD=575.2 gasPrice=12 gwei block=14177 txIx=0 txId=0x4382da3ccf3820468f925234b3c82deb4f9b78429d88561cfd7f2d23bf296c98 @ 1527908234 Sat, 02 Jun 2018 02:57:14 UTC
 undefined
 > 
-RESULT: moveTokens2Tx status=0x1 Success gas=100000 gasUsed=45602 costETH=0.000547224 costUSD=0.3147632448 @ ETH/USD=575.2 gasPrice=12 gwei block=12579 txIx=1 txId=0x79deb06d5d1d611173260c338855b6f7df2619a11cf491c71f89746ceb38aa26 @ 1527906636 Sat, 02 Jun 2018 02:30:36 UTC
+RESULT: moveTokens2Tx status=0x1 Success gas=100000 gasUsed=45602 costETH=0.000547224 costUSD=0.3147632448 @ ETH/USD=575.2 gasPrice=12 gwei block=14177 txIx=1 txId=0x10eabb4189576d85f5b2ee67f909a9f9635416fc575735c08955f063223fd460 @ 1527908234 Sat, 02 Jun 2018 02:57:14 UTC
 undefined
 > 
-RESULT: moveTokens3Tx status=0x1 Success gas=100000 gasUsed=44672 costETH=0.000536064 costUSD=0.3083440128 @ ETH/USD=575.2 gasPrice=12 gwei block=12581 txIx=0 txId=0x042a8ce0ce83f0eef6a3a9fce478e42f8615d0845efa4edcf9788461f3487caf @ 1527906638 Sat, 02 Jun 2018 02:30:38 UTC
+RESULT: moveTokens3Tx status=0x1 Success gas=100000 gasUsed=44672 costETH=0.000536064 costUSD=0.3083440128 @ ETH/USD=575.2 gasPrice=12 gwei block=14179 txIx=0 txId=0xed0f0bbb32bbc1ec27fd1c13df8c1fd526a43ea9e3d6cf00c53c2746e0fdf51e @ 1527908236 Sat, 02 Jun 2018 02:57:16 UTC
 undefined
 > 
-RESULT: tokenContractAddress=0x658ce9fb3cf49687a5309121b2794f349b79b9a6
+RESULT: tokenContractAddress=0x6fd3f3c1fe001ae4ba2c022feaceb94126478321
 RESULT: token.owner=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
 RESULT: token.withdrawWallet=0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976
 RESULT: token.tiersSet=true
@@ -842,9 +842,9 @@ RESULT: token.name=Svandis
 RESULT: token.decimals=18
 RESULT: token.totalSupply=400000000
 RESULT: token.getContractEth=0
-RESULT: Approval 0 #12579 _owner=0xa44a08d3f6933c69212114bb66e2df1813651844 _spender=0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9 _value=2
-RESULT: Transfer 0 #12579: _from=0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0 _to=0xa55a151eb00fded1634d27d1127b4be4627079ea _value=1
-RESULT: Transfer 1 #12581: _from=0xa44a08d3f6933c69212114bb66e2df1813651844 _to=0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec _value=2
+RESULT: Approval 0 #14177 _owner=0xa44a08d3f6933c69212114bb66e2df1813651844 _spender=0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9 _value=2
+RESULT: Transfer 0 #14177: _from=0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0 _to=0xa55a151eb00fded1634d27d1127b4be4627079ea _value=1
+RESULT: Transfer 1 #14179: _from=0xa44a08d3f6933c69212114bb66e2df1813651844 _to=0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec _value=2
 undefined
 > 
 RESULT: 
@@ -884,9 +884,9 @@ RESULT:  5 0xa55a151eb00fded1634d27d1127b4be4627079ea       -0.00084175200000000
 RESULT:  6 0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9       -0.001067520000000000           0.000000000000000000 Account #6
 RESULT:  7 0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec        0.000000000000000000           2.000000000000000000 Account #7
 RESULT:  8 0xa88a05d2b88283ce84c8325760b72a64591279a2        0.000000000000000000           0.000000000000000000 Account #8
-RESULT:  9 0xa99a0ae3354c06b1459fd441a32a3f71005d7da0       -0.000336324000000000   100000000.000000000000000000 Account #9 - Company #1
-RESULT: 10 0xaaaa9de1e6c564446ebca0fd102d8bd92093c756       -0.000492636000000000   297540000.000000000000000000 Account #10 - Company #2
-RESULT: 11 0x658ce9fb3cf49687a5309121b2794f349b79b9a6        0.000000000000000000           0.000000000000000000 Token 'SVN' 'Svandis'
+RESULT:  9 0xa99a0ae3354c06b1459fd441a32a3f71005d7da0       -0.000492636000000000   100000000.000000000000000000 Account #9 - Company #1
+RESULT: 10 0xaaaa9de1e6c564446ebca0fd102d8bd92093c756       -0.000336324000000000   297540000.000000000000000000 Account #10 - Company #2
+RESULT: 11 0x6fd3f3c1fe001ae4ba2c022feaceb94126478321        0.000000000000000000           0.000000000000000000 Token 'SVN' 'Svandis'
 RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
 RESULT:                                                                             400000000.000000000000000000 Total Token Balances
 RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
@@ -902,16 +902,16 @@ RESULT: PASS Move Zero Tokens - approve 0 tokens ac4 -> ac6
 RESULT: PASS Move Zero Tokens - transferFrom 0 tokens ac4 -> ac7 by ac6
 1
 > 
-RESULT: moveZeroTokens1Tx status=0x1 Success gas=100000 gasUsed=36981 costETH=0.000443772 costUSD=0.2552576544 @ ETH/USD=575.2 gasPrice=12 gwei block=12583 txIx=0 txId=0x9a63970e2484cedd0e07c63f779fc29217b652e14c6799dcd832253cf5611927 @ 1527906640 Sat, 02 Jun 2018 02:30:40 UTC
+RESULT: moveZeroTokens1Tx status=0x1 Success gas=100000 gasUsed=36981 costETH=0.000443772 costUSD=0.2552576544 @ ETH/USD=575.2 gasPrice=12 gwei block=14181 txIx=0 txId=0xef94cc7eaa5f379d05a87027ffce0f7d66184377b8d1a34a741c25ad3ced604f @ 1527908238 Sat, 02 Jun 2018 02:57:18 UTC
 undefined
 > 
-RESULT: moveZeroTokens2Tx status=0x1 Success gas=100000 gasUsed=30218 costETH=0.000362616 costUSD=0.2085767232 @ ETH/USD=575.2 gasPrice=12 gwei block=12584 txIx=0 txId=0x46deca8f50f3765d815968ffaf5b060fffb6ec5b7845a76873c6e68f6f400b2e @ 1527906641 Sat, 02 Jun 2018 02:30:41 UTC
+RESULT: moveZeroTokens2Tx status=0x1 Success gas=100000 gasUsed=30218 costETH=0.000362616 costUSD=0.2085767232 @ ETH/USD=575.2 gasPrice=12 gwei block=14182 txIx=0 txId=0x9e7ffbcdf0315d3d962da41db4c75e61c9737fe20c635ac6de59cd9b8a779d6d @ 1527908239 Sat, 02 Jun 2018 02:57:19 UTC
 undefined
 > 
-RESULT: moveZeroTokens3Tx status=0x1 Success gas=100000 gasUsed=44288 costETH=0.000531456 costUSD=0.3056934912 @ ETH/USD=575.2 gasPrice=12 gwei block=12586 txIx=0 txId=0x1bd3525f653a93ad64e0d451849969f7e2fa1a6acc06e870af839c36c5e36389 @ 1527906643 Sat, 02 Jun 2018 02:30:43 UTC
+RESULT: moveZeroTokens3Tx status=0x1 Success gas=100000 gasUsed=44288 costETH=0.000531456 costUSD=0.3056934912 @ ETH/USD=575.2 gasPrice=12 gwei block=14184 txIx=0 txId=0x24ecacb2bce45ae152756606d99a3c8f7c9ff3b8bb102ad6eb000104bc75f3a2 @ 1527908241 Sat, 02 Jun 2018 02:57:21 UTC
 undefined
 > 
-RESULT: tokenContractAddress=0x658ce9fb3cf49687a5309121b2794f349b79b9a6
+RESULT: tokenContractAddress=0x6fd3f3c1fe001ae4ba2c022feaceb94126478321
 RESULT: token.owner=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
 RESULT: token.withdrawWallet=0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976
 RESULT: token.tiersSet=true
@@ -923,9 +923,9 @@ RESULT: token.name=Svandis
 RESULT: token.decimals=18
 RESULT: token.totalSupply=400000000
 RESULT: token.getContractEth=0
-RESULT: Approval 0 #12584 _owner=0xa44a08d3f6933c69212114bb66e2df1813651844 _spender=0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9 _value=0
-RESULT: Transfer 0 #12583: _from=0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0 _to=0xa55a151eb00fded1634d27d1127b4be4627079ea _value=0
-RESULT: Transfer 1 #12586: _from=0xa44a08d3f6933c69212114bb66e2df1813651844 _to=0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec _value=0
+RESULT: Approval 0 #14182 _owner=0xa44a08d3f6933c69212114bb66e2df1813651844 _spender=0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9 _value=0
+RESULT: Transfer 0 #14181: _from=0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0 _to=0xa55a151eb00fded1634d27d1127b4be4627079ea _value=0
+RESULT: Transfer 1 #14184: _from=0xa44a08d3f6933c69212114bb66e2df1813651844 _to=0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec _value=0
 undefined
 > 
 RESULT: 
@@ -965,9 +965,9 @@ RESULT:  5 0xa55a151eb00fded1634d27d1127b4be4627079ea       -0.00084175200000000
 RESULT:  6 0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9       -0.001378080000000000           0.000000000000000000 Account #6
 RESULT:  7 0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec        0.000000000000000000           2.000000000000000000 Account #7
 RESULT:  8 0xa88a05d2b88283ce84c8325760b72a64591279a2        0.000000000000000000           0.000000000000000000 Account #8
-RESULT:  9 0xa99a0ae3354c06b1459fd441a32a3f71005d7da0       -0.000336324000000000   100000000.000000000000000000 Account #9 - Company #1
-RESULT: 10 0xaaaa9de1e6c564446ebca0fd102d8bd92093c756       -0.000492636000000000   297540000.000000000000000000 Account #10 - Company #2
-RESULT: 11 0x658ce9fb3cf49687a5309121b2794f349b79b9a6        0.000000000000000000           0.000000000000000000 Token 'SVN' 'Svandis'
+RESULT:  9 0xa99a0ae3354c06b1459fd441a32a3f71005d7da0       -0.000492636000000000   100000000.000000000000000000 Account #9 - Company #1
+RESULT: 10 0xaaaa9de1e6c564446ebca0fd102d8bd92093c756       -0.000336324000000000   297540000.000000000000000000 Account #10 - Company #2
+RESULT: 11 0x6fd3f3c1fe001ae4ba2c022feaceb94126478321        0.000000000000000000           0.000000000000000000 Token 'SVN' 'Svandis'
 RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
 RESULT:                                                                             400000000.000000000000000000 Total Token Balances
 RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
@@ -983,16 +983,16 @@ RESULT: PASS Move Too Many Tokens - approve 10,000,000 tokens ac5 -> ac7
 RESULT: PASS Move Too Many Tokens - transferFrom 10,000,000 tokens ac5 -> ac8 by ac7 - expecting failure
 1
 > 
-RESULT: moveTooManyTokens1Tx status=0x0 Failure gas=100000 gasUsed=24474 costETH=0.000293688 costUSD=0.1689293376 @ ETH/USD=575.2 gasPrice=12 gwei block=12588 txIx=0 txId=0x781520c3562ec21aaaa72ff15f064e7886265c85f3af6196390f8754f14a2d54 @ 1527906645 Sat, 02 Jun 2018 02:30:45 UTC
+RESULT: moveTooManyTokens1Tx status=0x0 Failure gas=100000 gasUsed=24474 costETH=0.000293688 costUSD=0.1689293376 @ ETH/USD=575.2 gasPrice=12 gwei block=14186 txIx=1 txId=0xd60a27b182a49741c45a43ba2d1924b7c13dc0fea9c8eef8c5c99cb5596cea40 @ 1527908243 Sat, 02 Jun 2018 02:57:23 UTC
 undefined
 > 
-RESULT: moveTooManyTokens2Tx status=0x1 Success gas=100000 gasUsed=45730 costETH=0.00054876 costUSD=0.315646752 @ ETH/USD=575.2 gasPrice=12 gwei block=12589 txIx=0 txId=0xafd69902afbfe79f9a080a703036aa8d184c3f3e9fa0c1e252f42a02cf7c3f3f @ 1527906646 Sat, 02 Jun 2018 02:30:46 UTC
+RESULT: moveTooManyTokens2Tx status=0x1 Success gas=100000 gasUsed=45730 costETH=0.00054876 costUSD=0.315646752 @ ETH/USD=575.2 gasPrice=12 gwei block=14186 txIx=0 txId=0x790d1cc92b61cf2d2b390ba0c3c23246d0830bcbd47f28d7ec0857126e98acd8 @ 1527908243 Sat, 02 Jun 2018 02:57:23 UTC
 undefined
 > 
-RESULT: moveTooManyTokens3Tx status=0x0 Failure gas=100000 gasUsed=25880 costETH=0.00031056 costUSD=0.178634112 @ ETH/USD=575.2 gasPrice=12 gwei block=12591 txIx=0 txId=0x8fbfbacb7a247cc921bbd1130a43dfdd5be082f1cebd5db870d79ca780b7c8f1 @ 1527906648 Sat, 02 Jun 2018 02:30:48 UTC
+RESULT: moveTooManyTokens3Tx status=0x0 Failure gas=100000 gasUsed=25880 costETH=0.00031056 costUSD=0.178634112 @ ETH/USD=575.2 gasPrice=12 gwei block=14188 txIx=0 txId=0x0274af77a36079dc571a7dad57c53b9d49e464797bd9234609c12ed74be38e30 @ 1527908245 Sat, 02 Jun 2018 02:57:25 UTC
 undefined
 > 
-RESULT: tokenContractAddress=0x658ce9fb3cf49687a5309121b2794f349b79b9a6
+RESULT: tokenContractAddress=0x6fd3f3c1fe001ae4ba2c022feaceb94126478321
 RESULT: token.owner=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
 RESULT: token.withdrawWallet=0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976
 RESULT: token.tiersSet=true
@@ -1004,7 +1004,7 @@ RESULT: token.name=Svandis
 RESULT: token.decimals=18
 RESULT: token.totalSupply=400000000
 RESULT: token.getContractEth=0
-RESULT: Approval 0 #12589 _owner=0xa44a08d3f6933c69212114bb66e2df1813651844 _spender=0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9 _value=10000000
+RESULT: Approval 0 #14186 _owner=0xa44a08d3f6933c69212114bb66e2df1813651844 _spender=0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9 _value=10000000
 undefined
 > 
 RESULT: 
