@@ -63,6 +63,16 @@ contract Sale is Svandis {
     }
 
     // BK Ok - Only owner can execute
+    function setOwner(address _newOwnerAddress) public onlyOwner returns (bool success) {
+        // BK Ok
+        require (_newOwnerAddress != address(0));
+        // BK Ok
+        owner = _newOwnerAddress;
+        // BK Ok
+        return true;
+    }
+
+    // BK Ok - Only owner can execute
     function setWithdrawWallet(address _withdrawalAddress) public onlyOwner returns (bool success) {
         // BK Ok
         require (_withdrawalAddress != address(0));
