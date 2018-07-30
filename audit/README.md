@@ -11,8 +11,9 @@ This audit has been conducted on Svandis' source code in commits
 [62d4b53](https://github.com/svandisproject/smart-contract/commit/62d4b53fd32ec6f1c650bfc09890661652dae663),
 [de9ebb3](https://github.com/svandisproject/smart-contract/commit/de9ebb3c6fd3295b1f98abef98f2364c744e4652),
 [2a33eab](https://github.com/svandisproject/smart-contract/commit/2a33eab2c3a0abd8f51ce5d9668c595bca9ff7e3),
-[2be689b](https://github.com/svandisproject/smart-contract/commit/2be689bd36e56870e4048dca83c17e8d44dadc58) and
-[e40b125](https://github.com/svandisproject/smart-contract/commit/e40b125e05a885f3a13f6abca0ca020ab7e19663).
+[2be689b](https://github.com/svandisproject/smart-contract/commit/2be689bd36e56870e4048dca83c17e8d44dadc58),
+[e40b125](https://github.com/svandisproject/smart-contract/commit/e40b125e05a885f3a13f6abca0ca020ab7e19663) and
+[9146747](https://github.com/svandisproject/smart-contract/commit/9146747c24498ef5b142cb2eecd0ccd33b68cef6).
 
 No potential vulnerabilities have been identified in the crowdsale/token contract.
 
@@ -23,6 +24,7 @@ No potential vulnerabilities have been identified in the crowdsale/token contrac
 ## Table Of Contents
 
 * [Summary](#summary)
+* [Note](#note)
 * [Recommendations](#recommendations)
 * [Potential Vulnerabilities](#potential-vulnerabilities)
 * [Scope](#scope)
@@ -31,6 +33,15 @@ No potential vulnerabilities have been identified in the crowdsale/token contrac
 * [Risks](#risks)
 * [Testing](#testing)
 * [Code Review](#code-review)
+
+
+<br />
+
+<hr />
+
+## Note
+
+Note that for `addMultipleToWhitelist(...)` and `addMultipleToCompanyWhitelist(...)`, the check against `balances[this]` is not effective against the sum of all `_quantities`. So just be careful in your whitelisting and spreadsheet calculations.
 
 <br />
 
@@ -181,4 +192,4 @@ in [test/test1results.txt](test/test1results.txt) and the detailed output saved 
 
 <br />
 
-(c) BokkyPooBah / Bok Consulting Pty Ltd for Svandis - Jun 28 2018. The MIT Licence.
+(c) BokkyPooBah / Bok Consulting Pty Ltd for Svandis - Jul 31 2018. The MIT Licence.

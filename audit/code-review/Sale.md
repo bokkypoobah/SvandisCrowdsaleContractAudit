@@ -117,12 +117,11 @@ contract Sale is Svandis {
         return true;
     }
 
+    // BK NOTE - The check against `balances[this]` is not effective against the sum of all `_quantities`
     // BK Ok - Only owner can execute
     function addMultipleToWhitelist(address[] _whitelistedAddresses, uint256[] _quantities) public onlyOwner returns (bool success) {
         // BK Ok
         require(_whitelistedAddresses.length == _quantities.length);
-    // BK Ok
-	require(_whitelistedAddresses.length <= 100); //Limit set at 100
 	    // BK Ok
         for(uint i = 0; i < _whitelistedAddresses.length; i++) {
             // BK Ok
@@ -139,6 +138,20 @@ contract Sale is Svandis {
         // BK Ok
         companyAllowed[_whitelisted] = _quantity;
         // BK Ok
+        return true;
+    }
+
+    // BK NOTE - The check against `balances[this]` is not effective against the sum of all `_quantities`
+    // BK Ok - Only owner can execute
+    function addMultipleToCompanyWhitelist(address[] _whitelistedAddresses, uint256[] _quantities) public onlyOwner returns (bool success) {
+        // BK Ok
+        require(_whitelistedAddresses.length == _quantities.length);
+        // BK Ok
+        for(uint i = 0; i < _whitelistedAddresses.length; i++) {
+            // BK Ok - Only owner can execute
+            addToCompanyWhitelist(_whitelistedAddresses[i], _quantities[i]);
+        }
+        // BK Ok - Only owner can execute
         return true;
     }
     
